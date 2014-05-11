@@ -5,8 +5,62 @@ menu: main
 weight : 30
 ---
 
-<div class="home">
+<noscript>
+    <style>
+        .es-carousel ul{
+            display:block;
+        }
+    </style>
+</noscript>
+<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+    <div class="rg-image-wrapper">
+        {{if itemsCount > 1}}
+            <div class="rg-image-nav">
+                <a href="#" class="rg-image-nav-prev">Previous Image</a>
+                <a href="#" class="rg-image-nav-next">Next Image</a>
+            </div>
+        {{/if}}
+        <div class="rg-image"></div>
+        <div class="rg-loading"></div>
+        <div class="rg-caption-wrapper">
+            <div class="rg-caption" style="display:none;">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</script>
 
-  <h1>Oeuvres</h1>
+<h1>{{ page.title }}</h1>
 
+<div class="row">
+  <div class="col-lg-8 col-md-offset-2">
+
+    <div id="rg-gallery" class="rg-gallery">
+        <div class="rg-thumbs">
+            <!-- Elastislide Carousel Thumbnail Viewer -->
+            <div class="es-carousel-wrapper">
+                <div class="es-nav">
+                    <span class="es-nav-prev">Previous</span>
+                    <span class="es-nav-next">Next</span>
+                </div>
+                <div class="es-carousel">
+                    <ul>
+<li><a href="https://farm3.staticflickr.com/2900/14160092604_16472401c9_z.jpg"><img src="https://farm3.staticflickr.com/2900/14160092604_16472401c9_s.jpg" data-large="https://farm3.staticflickr.com/2900/14160092604_16472401c9_z.jpg" alt="Eric Ferber - Pince" data-description="Pince - acier cortène - 4m"></a></li>
+<li><a href="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_z.jpg"><img src="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_s.jpg" data-large="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_z.jpg" alt="Eric Ferber - Totems" data-description="Totems - acier cortène - 10m"></a></li>
+<li><a href="https://farm3.staticflickr.com/2900/14160092604_16472401c9_z.jpg"><img src="https://farm3.staticflickr.com/2900/14160092604_16472401c9_s.jpg" data-large="https://farm3.staticflickr.com/2900/14160092604_16472401c9_z.jpg" alt="Eric Ferber - Pince" data-description="Pince - acier cortène - 4m"></a></li>
+<li><a href="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_z.jpg"><img src="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_s.jpg" data-large="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_z.jpg" alt="Eric Ferber - Totems" data-description="Totems - acier cortène - 10m"></a></li>
+<li><a href="https://farm3.staticflickr.com/2900/14160092604_16472401c9_z.jpg"><img src="https://farm3.staticflickr.com/2900/14160092604_16472401c9_s.jpg" data-large="https://farm3.staticflickr.com/2900/14160092604_16472401c9_z.jpg" alt="Eric Ferber - Pince" data-description="Pince - acier cortène - 4m"></a></li>
+<li><a href="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_z.jpg"><img src="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_s.jpg" data-large="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_z.jpg" alt="Eric Ferber - Totems" data-description="Totems - acier cortène - 10m"></a></li>
+<li><a href="https://farm3.staticflickr.com/2900/14160092604_16472401c9_z.jpg"><img src="https://farm3.staticflickr.com/2900/14160092604_16472401c9_s.jpg" data-large="https://farm3.staticflickr.com/2900/14160092604_16472401c9_z.jpg" alt="Eric Ferber - Pince" data-description="Pince - acier cortène - 4m"></a></li>
+<li><a href="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_z.jpg"><img src="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_s.jpg" data-large="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_z.jpg" alt="Eric Ferber - Totems" data-description="Totems - acier cortène - 10m"></a></li>
+<li><a href="https://farm3.staticflickr.com/2900/14160092604_16472401c9_z.jpg"><img src="https://farm3.staticflickr.com/2900/14160092604_16472401c9_s.jpg" data-large="https://farm3.staticflickr.com/2900/14160092604_16472401c9_z.jpg" alt="Eric Ferber - Pince" data-description="Pince - acier cortène - 4m"></a></li>
+<li><a href="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_z.jpg"><img src="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_s.jpg" data-large="https://farm8.staticflickr.com/7429/13973327107_54e6b96b79_z.jpg" alt="Eric Ferber - Totems" data-description="Totems - acier cortène - 10m"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Elastislide Carousel Thumbnail Viewer -->
+        </div><!-- rg-thumbs -->
+    </div><!-- rg-gallery -->
+
+  </div>
 </div>
