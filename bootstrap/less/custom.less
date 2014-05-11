@@ -1,18 +1,23 @@
 
 @import "bootstrap.less";
-
+@import "custom-rg-gallery.less";
 @import "custom-variables.less";
-
 
 .navbar-brand {
     padding: 14px 15px 14px 0;
     font-size: 30px;
+
+    @media (max-width: @grid-float-breakpoint) {
+        font-size: 20px;
+    }
 }
 
+.navbar-toggle {
+  margin-right: 0;
+}
 
 footer.footer{
     font-size: 12px;
     border-top: 1px solid #ddd;
     margin-top: 20px;
 }
-
