@@ -1,11 +1,14 @@
 # Site settings
-name: Dat site title tho
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+name: Eric Ferber - Sculpteur
+title: Eric Ferber - Sculpteur
+email: eric@atelier-ferber.fr
+description: "Eric Ferber - Sculpteur monumental"
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://eric-ferber.github.io/"
 
 # Build settings
 markdown: kramdown
 permalinks: pretty
+
+
+exclude: [bootstrap/less]
