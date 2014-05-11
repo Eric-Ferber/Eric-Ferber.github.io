@@ -1,20 +1,31 @@
 ---
 layout: default
+title: Accueil
+menu: main
+weight : 1
 ---
 
-<div class="home">
+<div class="row">
+  <div class="col-lg-12">
 
-  <h1>Posts</h1>
+    <div class="delayed-flickr-image-load" data-src="//farm8.staticflickr.com/7420/13973435700_cb0e1aff64{width}.jpg" data-alt="Eric Ferber Sculpture monumentale" data-class="img-responsive"></div>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  </div>
 </div>
+
+
+<script>
+
+    var imgrFlickr = new Imager('.delayed-flickr-image-load', {
+        availableWidths: {
+            240: '_m',
+            320: '_n',
+            500: '',
+            640: '_z',
+            800: '_c',
+            1024: '_b',
+            1280: '_o'
+        }
+    });
+
+</script>
