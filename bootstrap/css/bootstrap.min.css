@@ -605,16 +605,16 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 .navbar-btn{margin-top:7px;margin-bottom:7px}.navbar-btn.btn-sm{margin-top:8.5px;margin-bottom:8.5px}
 .navbar-btn.btn-xs{margin-top:14px;margin-bottom:14px}
 .navbar-text{margin-top:14px;margin-bottom:14px}@media (min-width:768px){.navbar-text{float:left;margin-left:15px;margin-right:15px}.navbar-text.navbar-right:last-child{margin-right:0}}
-.navbar-default{background-color:#fff;border-color:#fff}.navbar-default .navbar-brand{color:#832001}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color:#fd6231;background-color:transparent}
+.navbar-default{background-color:#fff;border-color:#fff}.navbar-default .navbar-brand{color:#832001}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color:#832001;background-color:transparent}
 .navbar-default .navbar-text{color:#222}
 .navbar-default .navbar-nav>li>a{color:#832001}.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{color:#fd6231;background-color:transparent}
-.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#fd6231;background-color:#eee}
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#fd6231;background-color:#fff}
 .navbar-default .navbar-nav>.disabled>a,.navbar-default .navbar-nav>.disabled>a:hover,.navbar-default .navbar-nav>.disabled>a:focus{color:#ccc;background-color:transparent}
 .navbar-default .navbar-toggle{border-color:#ddd}.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#ddd}
 .navbar-default .navbar-toggle .icon-bar{background-color:#888}
 .navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#fff}
-.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus{background-color:#eee;color:#fd6231}
-@media (max-width:767px){.navbar-default .navbar-nav .open .dropdown-menu>li>a{color:#832001}.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus{color:#fd6231;background-color:transparent} .navbar-default .navbar-nav .open .dropdown-menu>.active>a,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus{color:#fd6231;background-color:#eee} .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus{color:#ccc;background-color:transparent}}
+.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus{background-color:#fff;color:#fd6231}
+@media (max-width:767px){.navbar-default .navbar-nav .open .dropdown-menu>li>a{color:#832001}.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus{color:#fd6231;background-color:transparent} .navbar-default .navbar-nav .open .dropdown-menu>.active>a,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus{color:#fd6231;background-color:#fff} .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus{color:#ccc;background-color:transparent}}
 .navbar-default .navbar-link{color:#832001}.navbar-default .navbar-link:hover{color:#fd6231}
 .navbar-default .btn-link{color:#832001}.navbar-default .btn-link:hover,.navbar-default .btn-link:focus{color:#fd6231}
 .navbar-default .btn-link[disabled]:hover,fieldset[disabled] .navbar-default .btn-link:hover,.navbar-default .btn-link[disabled]:focus,fieldset[disabled] .navbar-default .btn-link:focus{color:#ccc}
@@ -903,7 +903,9 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .es-nav span{position:absolute;top:10px;left:0;background:#ddd url(../../img/nav-black.png) no-repeat -20% 50%;width:28px;height:71px;text-indent:-9000px;cursor:pointer;opacity:.4;outline:none}
 .es-nav span.es-nav-next{right:0;left:auto;background-position:115% 50%}
 .es-nav span:hover{opacity:1}
-.navbar-brand{height:auto;vertical-align:bottom;padding:14px 15px 14px 0;font-size:30px}@media (max-width:768px){.navbar-brand{font-size:20px}}
-.navbar-logo{width:100px}
+.page-header{padding-bottom:0;margin:0}
+.page-header h1{height:auto;vertical-align:bottom;padding:38px 15px 0 90px;font-size:30px;background:#fff url(../../img/logo-eric-ferber-80.png) no-repeat top left}@media (max-width:1024px){.page-header h1{font-size:24px}}@media (max-width:768px){.page-header h1{font-size:20px}}
+.navbar-brand:hover{opacity:.8}
 .navbar-toggle{margin-right:0}
+h1{color:#555}
 footer.footer{font-size:12px;border-top:1px solid #ddd;margin-top:20px}

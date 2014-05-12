@@ -3,25 +3,38 @@
 @import "custom-rg-gallery.less";
 @import "custom-variables.less";
 
-.navbar-brand {
+.page-header {
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.page-header h1 {
 
     height: auto;
     vertical-align: bottom;
-
-    padding: 14px 15px 14px 0;
+    padding: 38px 15px 0px 90px;
     font-size: 30px;
+    background: #fff url(../../img/logo-eric-ferber-80.png) no-repeat top left;
+
+    @media (max-width: 1024px ) {
+        font-size: 24px;
+    }
 
     @media (max-width: @grid-float-breakpoint) {
         font-size: 20px;
     }
 }
 
-.navbar-logo {
-    width: 100px;
+.navbar-brand:hover{
+    opacity: 0.8;
 }
 
 .navbar-toggle {
   margin-right: 0;
+}
+
+h1{
+    color: @gray;
 }
 
 footer.footer{
