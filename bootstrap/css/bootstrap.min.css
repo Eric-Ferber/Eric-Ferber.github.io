@@ -903,6 +903,7 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .es-nav span{position:absolute;top:50%;left:8px;background:#832001 url(../../img/nav_thumbs.png) no-repeat top left;width:14px;height:26px;margin-top:-13px;text-indent:-9000px;cursor:pointer;opacity:.4}
 .es-nav span.es-nav-next{right:8px;left:auto;background-position:top right}
 .es-nav span:hover{opacity:1}
-.navbar-brand{padding:14px 15px 14px 0;font-size:30px}@media (max-width:768px){.navbar-brand{font-size:20px}}
+.navbar-brand{height:auto;vertical-align:bottom;padding:14px 15px 14px 0;font-size:30px}@media (max-width:768px){.navbar-brand{font-size:20px}}
+.navbar-logo{width:100px}
 .navbar-toggle{margin-right:0}
 footer.footer{font-size:12px;border-top:1px solid #ddd;margin-top:20px}
