@@ -14,7 +14,6 @@
       suffix: _16472401c9_b
 
 - name : Totems
-
   legend : acier cortène - 7m
   image : https://farm8.staticflickr.com/7429/13973327107
   vignette : _54e6b96b79_s
@@ -23,7 +22,23 @@
   formats:
     - size: 375
       suffix: _54e6b96b79
+    - size: 480
+      suffix: _54e6b96b79_z
     - size: 600
       suffix: _54e6b96b79_c
     - size: 768
       suffix: _54e6b96b79_b
+
+- name : Squares
+  legend : Aluminium poli - 2m x 2m
+  image : https://farm8.staticflickr.com/7329/13982070039
+  vignette : _25598c594a_s
+  type: jpg
+
+  formats:
+    - size: 320
+      suffix: _25598c594a_n
+    - size: 640
+      suffix: _25598c594a_z
+    - size: 1024
+      suffix: _25598c594a_b
