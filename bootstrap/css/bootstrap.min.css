@@ -878,7 +878,7 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}
 @media print{.hidden-print{display:none !important}}
 #rg-gallery{margin:0 auto}
-.rg-image-wrapper{position:relative;padding:20px 30px;background:#fff;min-height:20px}
+.rg-image-wrapper{position:relative;padding:10px;background:#fff;min-height:20px}
 .rg-image{position:relative;text-align:center;line-height:0}
 .rg-image img{max-height:100%;max-width:100%}
 .rg-caption{text-align:center;margin-top:15px;position:relative}
@@ -893,7 +893,7 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .rg-view a.rg-view-selected{background-color:#6f6f6f;border-color:#6f6f6f}
 .rg-view a.rg-view-thumbs{background-position:0 -16px}
 .rg-loading{width:46px;height:46px;position:absolute;top:50%;left:50%;background:#000 url(../../img/ajax-loader.gif) no-repeat center center;margin:-23px 0 0 -23px;z-index:100;opacity:.7}
-.es-carousel-wrapper{background:#fff;padding:10px 27px;position:relative;margin-bottom:20px}
+.es-carousel-wrapper{background:#fff;padding:10px 27px 0;position:relative;margin-bottom:0}
 .es-carousel{overflow:hidden;background:#fff;padding:0;border:1px solid #832001}
 .es-carousel ul{display:none;list-style:none;margin:0;padding:0}
 .es-carousel ul li{height:100%;float:left;display:block}
@@ -905,7 +905,8 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .es-nav span:hover{opacity:1}
 .page-header{padding-bottom:0;margin:0}
 .page-header h1{height:auto;vertical-align:bottom;padding:38px 15px 0 90px;font-size:30px;background:#fff url(../../img/logo-eric-ferber-80.png) no-repeat top left}@media (max-width:1024px){.page-header h1{font-size:24px}}@media (max-width:768px){.page-header h1{font-size:20px}}
-.navbar-brand:hover{opacity:.8}
+.navbar{margin-bottom:10px}
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{border-bottom:1px solid #832001}
 .navbar-toggle{margin-right:0}
 h1{color:#555}
 footer.footer{font-size:12px;border-top:1px solid #ddd;margin-top:20px}
