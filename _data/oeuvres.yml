@@ -1,0 +1,29 @@
+
+- name : Pince
+  legend : acier cortène - 4m
+  image : https://farm3.staticflickr.com/2900/14160092604
+  vignette : _16472401c9_s
+  type: jpg
+
+  formats:
+    - size: 375
+      suffix: _16472401c9
+    - size: 600
+      suffix: _16472401c9_c
+    - size: 768
+      suffix: _16472401c9_b
+
+- name : Totems
+
+  legend : acier cortène - 7m
+  image : https://farm8.staticflickr.com/7429/13973327107
+  vignette : _54e6b96b79_s
+  type: jpg
+
+  formats:
+    - size: 375
+      suffix: _54e6b96b79
+    - size: 600
+      suffix: _54e6b96b79_c
+    - size: 768
+      suffix: _54e6b96b79_b
