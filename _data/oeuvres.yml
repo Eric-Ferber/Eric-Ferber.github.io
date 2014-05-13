@@ -56,6 +56,20 @@
       500 : -500
 
 #####################################################"
+
+- nom : Circle 5
+  legende : ~
+  dimensions : Hauteur avec socle 2,8 mètres
+  materiaux  : tôle aluminium
+  finition  : laquage rouge ral 3002 mat
+  image :
+    base  : circle-5
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
 - nom : Ezo
   legende : ~
   dimensions : hauteur 2,5 mètres
@@ -63,19 +77,6 @@
   finition  : laquage sablé antracite Tiger 29/71335
   image :
     base  : ezo
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-#####################################################"
-
-- nom : Candide
-  legende : ~
-  dimensions : hauteur 0.8 mètres
-  materiaux  : tôle acier corten
-  finitions  :
-  image :
-    base  : candide
     thumb : -75
     ext   : .jpg
   formats:
@@ -107,6 +108,20 @@
   formats:
       500 : -500
 #####################################################"
+
+- nom : Candide
+  legende : ~
+  dimensions : hauteur 0.8 mètres
+  materiaux  : tôle acier corten
+  finitions  :
+  image :
+    base  : candide
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################"
+
 
 - nom : Tranche de vie
   legende :
