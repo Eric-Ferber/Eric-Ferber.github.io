@@ -197,14 +197,14 @@
 		},
 		_addControls		: function() {
 
-			this.$navNext	= $('<span class="es-nav-next">Next</span>');
-			this.$navPrev	= $('<span class="es-nav-prev">Previous</span>');
+			this.$navNext	= $('<span class="es-nav-next">Suivant</span>');
+			this.$navPrev	= $('<span class="es-nav-prev">Précédent</span>');
 			$('<div class="es-nav"/>')
 			.append( this.$navPrev )
 			.append( this.$navNext )
 			.appendTo( this.$el );
 
-			//this._toggleControls();
+			this._toggleControls();
 
 		},
 		_toggleControls		: function( dir, status ) {
@@ -370,9 +370,6 @@
 			}
 
 			$.fn.applyStyle = ( anim === undefined ) ? $.fn.animate : $.fn.css;
-
-console.log('margin left = ' + val);
-
 
 			var sliderCSS	= { marginLeft : val };
 

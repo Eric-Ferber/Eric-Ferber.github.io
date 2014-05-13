@@ -14,12 +14,6 @@ weight : 30
 </noscript>
 <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
     <div class="rg-image-wrapper">
-        {{if itemsCount > 1}}
-            <div class="rg-image-nav">
-                <a href="#" class="rg-image-nav-prev">Previous Image</a>
-                <a href="#" class="rg-image-nav-next">Next Image</a>
-            </div>
-        {{/if}}
         <div class="rg-image"></div>
         <div class="rg-loading"></div>
         <div class="rg-caption-wrapper">
@@ -31,28 +25,30 @@ weight : 30
 </script>
 
 <div class="row">
-  <div class="col-lg-8 col-md-offset-2">
+  <div class="col-lg-10 col-md-offset-1">
 
     <div id="rg-gallery" class="rg-gallery">
         <div class="rg-thumbs">
             <!-- Elastislide Carousel Thumbnail Viewer -->
             <div class="es-carousel-wrapper">
-                <div class="es-nav">
-                    <span class="es-nav-prev">Previous</span>
-                    <span class="es-nav-next">Next</span>
-                </div>
+                <div class="es-nav"></div>
                 <div class="es-carousel">
-                    <ul>
-{% for o in site.data.oeuvres %}{% unless o.formats.empty? %}{% for f in o.formats %}
-        {% assign thumbUrl = o.image|append:o.vignette|append:'.'|append:o.type %}
-        {% assign imgUrl = o.image|append:f.suffix|append:'.'|append:o.type %}
-        {% assign imgAlt = o.name|append:' - '|append:o.legend|append: ' - largueur image :'|append:{{f.size}} %}
-<li>
-    <a href="#">
-        <img src="{{thumbUrl}}" alt="" data-large="{{imgUrl}}" alt="{{imgAlt}}" data-description="{{imgAlt}}">
-    </a>
-</li>
-{% endfor %}{% endunless %}{% endfor %}
+
+<ul>
+{% for o in site.data.oeuvres %}
+
+    {% assign i        = o.image %}
+    {% assign thumbUrl = i.base | append : i.thumb | append : i.ext %}
+    {% assign imgAlt   = o.name | append : ' - ' | append : o.dimensions %}
+    {% assign index    = forloop.index | minus: 1 %}
+
+    <li><h1>{{id}}</h1>
+        <a href="#">
+            <img src="{{thumbUrl}}" data-index="{{ index }}" alt="{{imgAlt}}">
+        </a>
+    </li>
+
+{% endfor %}
                     </ul>
                 </div>
             </div>
@@ -62,3 +58,7 @@ weight : 30
 
   </div>
 </div>
+
+<script>
+var EFGallery = {{ site.data.oeuvres | jsonify }};
+</script>

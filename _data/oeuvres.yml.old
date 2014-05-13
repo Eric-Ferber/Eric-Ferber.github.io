@@ -1,0 +1,33 @@
+
+- name : Pince
+  legend : acier cortène - 4m
+  image : https://farm3.staticflickr.com/2900/14160092604
+  id : _16472401c9
+  thumb : _s
+  type: jpg
+
+  formats:
+      480 : _z
+
+- name : Totems
+  legend : acier cortène - 7m
+  image : https://farm8.staticflickr.com/7429/13973327107
+  id : _54e6b96b79
+  thumb : _s
+  type: jpg
+
+  formats:
+      480 : _z
+
+
+- name : Squares
+  legend : Aluminium poli - 2m x 2m
+  image : https://farm8.staticflickr.com/7329/13982070039
+  id : _25598c594a
+  thumb : _s
+  type: jpg
+
+  formats:
+      320 : _n
+      640 : _z
+
