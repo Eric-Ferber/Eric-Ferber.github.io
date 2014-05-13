@@ -7,25 +7,38 @@ menu: main
 
 <div class="row">
     <div class="col-lg-6">
-
         <p>Vous pouvez visiter l’atelier qui se trouve en Lorraine proche de Metz sur rendez-vous uniquement.</p>
-
-        <address>
+        <address itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
           <strong>Eric Ferber</strong><br>
-          Atelier Expo<br>
-          Parc d'activités<br>
-          57450 Henriville<br>
-          France<br>
-          <abbr title="Téléphone">P:</abbr> +33 3 87 90 82 87<br>
-          <abbr title="Mobile">M:</abbr> +33 6 78 97 14 10<br>
-          <abbr title="Email">@:</abbr> eric@atelier-ferber.fr
+          <span itemprop="street-address">
+            Atelier Expo<br>
+            Parc d'activités Megazone Moselle Est<br>
+          </span>
+          <span itemprop="postal-code">57450</span>
+          <span itemprop="locality">Henriville</span><br>
+          <span itemprop="country-name">France</span><br>
+          <br>
+          <abbr title="Téléphone">P</abbr> : <span itemprop="tel">+33 3 87 90 82 87</span><br>
+          <abbr title="Mobile" itemprop="tel">M</abbr> : <span itemprop="tel">+33 6 78 97 14 10</span><br>
+          <br>
+          <abbr title="Email">@</abbr> : <span>eric@atelier-ferber.fr</span>
+          <br>
+          <abbr title="Website">web</abbr> :
+            <span>
+              <a itemprop="url" href="http://eric-ferber.fr/">eric-ferber.fr</a>
+            </span>
+          <br>
+          <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+            <meta itemprop="latitude" content="49.103987" />
+            <meta itemprop="longitude" content="6.844032" />
+          </span>
         </address>
-
+        <abbr title="Global Positioning System">GPS</abbr> : <span>49°06'14.3"N 6°50'38.5"E</span>
     </div>
 
     <div class="col-lg-6">
-        <iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=Megazone%20Moselle%20Est%2C%2057450%20Henriville%2C%20France&key=AIzaSyAsvi9u0i9Izb9KlGKeW5KldeM_FSJ1PpI"></iframe>
+<iframe width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=49.103987%2C6.844032&key=AIzaSyAsvi9u0i9Izb9KlGKeW5KldeM_FSJ1PpI"></iframe>
     </div>
 
 </div>
