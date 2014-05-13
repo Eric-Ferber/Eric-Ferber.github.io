@@ -881,7 +881,7 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .rg-image-wrapper{position:relative;padding:10px;background:#fff;min-height:20px}
 .rg-image{position:relative;text-align:center;line-height:0;cursor:pointer}
 .rg-image img{max-height:100%;max-width:100%}
-.rg-caption-wrapper{background:#fff;position:absolute;bottom:0;right:0;opacity:.8}
+.rg-caption-wrapper{background:#fff;position:absolute;bottom:0;right:0;opacity:.8;width:100%;text-align:center}
 .rg-caption{text-align:center;margin-top:15px;position:relative}
 .rg-caption p{letter-spacing:2px;padding:0 15px}
 .rg-view{height:30px}

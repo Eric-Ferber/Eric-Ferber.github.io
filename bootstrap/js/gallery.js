@@ -1,3 +1,5 @@
+// code well inspired by http://tympanus.net/codrops/2011/09/20/responsive-image-gallery/
+
 $(function() {
     // ======================= imagesLoaded Plugin ===============================
     // https://github.com/desandro/imagesloaded
@@ -12,56 +14,57 @@ $(function() {
     // original: mit license. paul irish. 2010.
     // contributors: Oren Solomianik, David DeSandro, Yiannis Chatzikonstantinou
 
-    $.fn.imagesLoaded         = function( callback ) {
-    var $images = this.find('img'),
-        len     = $images.length,
-        _this     = this,
-        blank     = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+    $.fn.imagesLoaded         = function( callback ) 	{
 
-    function triggerCallback() {
-        callback.call( _this, $images );
-    }
+	    var $images = this.find('img'),
+	        len     = $images.length,
+	        _this     = this,
+	        blank     = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 
-    function imgLoaded() {
-        if ( --len <= 0 && this.src !== blank ){
-            setTimeout( triggerCallback );
-            $images.off( 'load error', imgLoaded );
-        }
-    }
+	    function triggerCallback() {
+	        callback.call( _this, $images );
+	    }
 
-    if ( !len ) {
-        triggerCallback();
-    }
+	    function imgLoaded() {
+	        if ( --len <= 0 && this.src !== blank ){
+	            setTimeout( triggerCallback );
+	            $images.off( 'load error', imgLoaded );
+	        }
+	    }
 
-    $images.on( 'load error',  imgLoaded ).each( function() {
-        // cached images don't fire load sometimes, so we reset src.
-        if (this.complete || this.complete === undefined){
-            var src = this.src;
-            // webkit hack from http://groups.google.com/group/jquery-dev/browse_thread/thread/eee6ab7b2da50e1f
-            // data uri bypasses webkit log warning (thx doug jones)
-            this.src = blank;
-            this.src = src;
-        }
-    });
+	    if ( !len ) {
+	        triggerCallback();
+	    }
 
-    return this;
+	    $images.on( 'load error',  imgLoaded ).each( function() {
+	        // cached images don't fire load sometimes, so we reset src.
+	        if (this.complete || this.complete === undefined){
+	            var src = this.src;
+	            // webkit hack from http://groups.google.com/group/jquery-dev/browse_thread/thread/eee6ab7b2da50e1f
+	            // data uri bypasses webkit log warning (thx doug jones)
+	            this.src = blank;
+	            this.src = src;
+	        }
+	    });
+
+	    return this;
     };
 
     // gallery container
-    var $rgGallery            = $('#rg-gallery'),
+    var $rgGallery  = $('#rg-gallery');
     // carousel container
-    $esCarousel            = $rgGallery.find('div.es-carousel-wrapper'),
+    var $esCarousel = $rgGallery.find('div.es-carousel-wrapper');
     // the carousel items
-    $items                = $esCarousel.find('ul > li'),
+    var $items      = $esCarousel.find('ul > li');
     // total number of items
-    itemsCount            = $items.length;
+    var itemsCount  = $items.length;
 
-    Gallery                = (function() {
-            // index of the current item
+    Gallery = (function() {
+        // index of the current item
         var current            = 0,
             // mode : carousel || fullview
             mode             = 'carousel',
-            // control if one image is being loaded
+         	   // control if one image is being loaded
             anim            = false,
             init            = function() {
 
@@ -196,76 +199,69 @@ $(function() {
             },
             _showImage        = function( $item ) {
 
-                // shows the large image that is associated to the $item
+			    // shows the large image that is associated to the $item
+			    var $loader    = $rgGallery.find('div.rg-loading').show();
 
-                var $loader    = $rgGallery.find('div.rg-loading').show();
+			    $items.removeClass('selected');
+			    $item.addClass('selected');
 
-                $items.removeClass('selected');
-                $item.addClass('selected');
+				var $thumb      = $item.find('img');
+				var largesrc    = $thumb.data('large');
 
-var $thumb        = $item.find('img'),
-    largesrc    = $thumb.data('large'),
-    id          = $thumb.data('index');
+				// find image index in EFGallery
+				var id          = $thumb.data('index');
 
-var curObj      = EFGallery[id];
-var curImg      = curObj.image
+				var curObj      = EFGallery[id];
+				var curImg      = curObj.image;
+				var imgSrc      = 'img/oeuvres/' + curImg['base']
+								  + '{width}' + curImg['ext'];
+				var imgAlt      = 'Eric Ferber - ' + curObj['nom'];
+				var legende     = curObj["legende"] ? '<br>' + curObj["legende"] : "";
+				var dimensions  = curObj["dimensions"] ? '<br>Dimensions : '
+				                 + curObj["dimensions"] : "";
 
-var imgSrc      = 'img/oeuvres/' + curImg['base'] + '{width}' + curImg['ext'],
-    imgAlt      = 'Eric Ferber - ' + curObj['nom'];
+				var materiaux   = curObj["materiaux"] ? '<br>Materiaux : '
+				                 + curObj["materiaux"] : "";
 
-var legende    = curObj["legende"] ? '<br>' + curObj["legende"] : "";
-var dimensions = curObj["dimensions"] ? '<br>Dimensions : ' + curObj["dimensions"] : "";
-var materiaux  = curObj["materiaux"] ? '<br>Materiaux : ' + curObj["materiaux"] : "";
-var finitions  = curObj["finition"] ? '<br>Finition : ' + curObj["finition"] : "";
+				var finitions   = curObj["finition"] ? '<br>Finition : '
+				                 + curObj["finition"] : "";
 
-var imgCaption  = '<strong>' + curObj["nom"] + '</strong>'
-                  + legende + dimensions + materiaux + finitions;
+				var imgLegend   = '<a href="#" class="legend"><strong>' + curObj["nom"] + '</strong></a>'
 
-var imgId		= 'img' + id;
-var imgTarget   = '#' + imgId;
+				var imgCaption  = legende + dimensions + materiaux + finitions;
+				var imgId		= 'img' + id;
+				var imgTarget   = '#' + imgId;
+				var imagerTpl   = '<div id="' + imgId + '" data-src="' + imgSrc
+				                  + '" data-alt="' + imgAlt
+				                  + '" data-class="img-reponsive"></div>';
 
-var imagerTpl   = '<div id="' + imgId + '" data-src="' + imgSrc
-                + '" data-alt="' + imgAlt + '" data-class="img-reponsive"></div>';
+			    $rgGallery.find('div.rg-image').empty().append(imagerTpl);
 
-                $rgGallery.find('div.rg-image').empty().append(imagerTpl);
+				$rgGallery.find('div.rg-legend').children('p').empty().html( imgLegend );
 
-$rgGallery.find('div.rg-caption').show().children('p').empty().html( imgCaption );
+				// building the popover
+				_builPopover(imgCaption);
 
-                $loader.hide();
+		        $loader.hide();
 
-                if( mode === 'carousel' ) {
-                    $esCarousel.elastislide( 'reload' );
-                    $esCarousel.elastislide( 'setCurrent', current );
-                }
+		        if( mode === 'carousel' ) {
+		            $esCarousel.elastislide( 'reload' );
+		            $esCarousel.elastislide( 'setCurrent', current );
+		        }
 
-                anim    = false;
+		        anim    = false;
 
-var imgrFlickr = new Imager( imgTarget, {
-    availableWidths: curObj.formats
-});
-/**/
-                // call Imager.js
+				var imgrFlickr = new Imager( imgTarget, {
+				    availableWidths: curObj.formats
+				});
 
+            },
+            _builPopover = function( imgCaption ){
 
-/*
-                $('<img/>').load( function() {
+				imgCaption = '<a href="#" data-toggle="popover" data-html="true" data-content="<div><b>Popover Example</b> 1 - Content</div>" title="Popover Example <b>1</b> - Title">Popover Example 1</a>';
 
-                    $rgGallery.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
+				$rgGallery.find('div.rg-caption').show().children('p').empty().html( imgCaption );
 
-                    if( title )
-                        $rgGallery.find('div.rg-caption').show().children('p').empty().text( title );
-
-                    $loader.hide();
-
-                    if( mode === 'carousel' ) {
-                        $esCarousel.elastislide( 'reload' );
-                        $esCarousel.elastislide( 'setCurrent', current );
-                    }
-
-                    anim    = false;
-
-                }).attr( 'src', largesrc );
-*/
             },
             addItems        = function( $new ) {
 

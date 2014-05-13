@@ -1,0 +1,36 @@
+
+<div class="row">
+  <div class="col-lg-10 col-md-offset-1">
+    <div id="rg-gallery" class="rg-gallery">
+      <div class="rg-thumbs">
+        <div class="es-carousel-wrapper">
+          <div class="es-nav">
+          </div>
+          <div class="es-carousel">
+            <ul>
+            {% for o in include.collection %}
+                {% assign i        = o.image %}
+
+                {% assign thumbUrl = 'img/oeuvres/' | append : i.base | append : i.thumb | append : i.ext %}
+
+                {% assign imgAlt   = o.name | append : ' - ' | append : o.dimensions %}
+
+                {% assign index    = forloop.index | minus: 1 %}
+              <li>
+                    <a href="#">
+                        <img src="{{thumbUrl}}" data-index="{{ index }}" alt="{{imgAlt}}">
+                    </a>
+              </li>
+
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div><!-- rg-thumbs -->
+    </div>
+  </div>
+</div>
+
+<script>
+var EFGallery = {{ include.collection | jsonify }};
+</script>
