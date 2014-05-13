@@ -905,11 +905,11 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .es-nav span.es-nav-next{right:0;left:auto}
 .es-nav span:hover{opacity:1}
 header{margin:10px 0 20px}
-.navbar-brand{padding:12px 3px 10px 60px;background:#fff url(../../img/logo-eric-ferber-40.png) no-repeat top left}
-.page-header a:hover{text-decoration:none}
+.navbar-brand{padding:12px 3px 10px 50px;background:#fff url(../../img/logo-eric-ferber-40.png) no-repeat top left}
 .navbar{margin-bottom:10px}
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{border-bottom:1px solid #222}
 .navbar-toggle{margin-right:0}
+.navbar-nav>li>a{padding-top:0;padding-bottom:5px}
 .content a,footer a{border-bottom:1px dotted #222}
 .content a:hover,footer a:hover{border-bottom:1px solid #222;text-decoration:none}
 h1{color:#555}
