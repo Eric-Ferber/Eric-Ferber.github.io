@@ -897,8 +897,8 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .es-carousel{overflow:hidden;background:#fff;padding:0}
 .es-carousel ul{display:none;list-style:none;margin:0;padding:0}
 .es-carousel ul li{height:100%;float:left;display:block}
-.es-carousel ul li a{display:block;border-style:solid;border-color:#222;opacity:.8;-webkit-touch-callout:none;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
-.es-carousel ul li.selected a{border-color:#fff;opacity:1}
+.es-carousel ul li a{display:block;border-style:solid;border-color:#fff;opacity:.8;-webkit-touch-callout:none;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.es-carousel ul li.selected a{border-color:#666;opacity:1}
 .es-carousel ul li a img{display:block;border:none;max-height:100%;max-width:100%}
 .es-nav span{position:absolute;top:50%;left:0;background:#fff;width:5em;height:71px;cursor:pointer;opacity:.4;outline:none;vertical-align:bottom}
 .es-nav span.es-nav-next{right:0;left:auto}
@@ -909,5 +909,7 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .navbar{margin-bottom:10px}
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{border-bottom:1px solid #222}
 .navbar-toggle{margin-right:0}
+.content a,footer a{border-bottom:1px dotted #222}
+.content a:hover,footer a:hover{border-bottom:1px solid #222;text-decoration:none}
 h1{color:#555}
 footer.footer{font-size:12px;border-top:1px solid #ddd;margin-top:20px}

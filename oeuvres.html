@@ -11,6 +11,9 @@ weight : 30
             display:block;
         }
     </style>
+    <div class="alert alert-danger">
+        <p>Merci d'activer javascript pour voir cette galerie.</p>
+    </div>
 </noscript>
 <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
     <div class="rg-image-wrapper">
@@ -38,11 +41,11 @@ weight : 30
 {% for o in site.data.oeuvres %}
 
     {% assign i        = o.image %}
-    {% assign thumbUrl = i.base | append : i.thumb | append : i.ext %}
+    {% assign thumbUrl = 'img/oeuvres/' | append : i.base | append : i.thumb | append : i.ext %}
     {% assign imgAlt   = o.name | append : ' - ' | append : o.dimensions %}
     {% assign index    = forloop.index | minus: 1 %}
 
-    <li><h1>{{id}}</h1>
+    <li>
         <a href="#">
             <img src="{{thumbUrl}}" data-index="{{ index }}" alt="{{imgAlt}}">
         </a>
