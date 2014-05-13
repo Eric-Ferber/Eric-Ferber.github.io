@@ -11,4 +11,4 @@ markdown: kramdown
 permalinks: pretty
 
 
-exclude: [bootstrap/less]
+exclude: [LICENSE, README.md, Rakefile, bootstrap/less, node_modules]
