@@ -904,8 +904,8 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .es-nav span{position:absolute;top:50%;left:0;background:#fff;width:5em;height:71px;cursor:pointer;opacity:.4;outline:none;vertical-align:bottom}
 .es-nav span.es-nav-next{right:0;left:auto}
 .es-nav span:hover{opacity:1}
-.page-header{padding-bottom:0;margin:0}
-.page-header a{height:auto;vertical-align:bottom;padding:31px 15px 0 90px;font-size:28px;background:#fff url(../../img/logo-eric-ferber-80.png) no-repeat top left}@media (max-width:1024px){.page-header a{font-size:24px}}@media (max-width:768px){.page-header a{font-size:20px}}
+header{margin:10px 0 20px}
+.navbar-brand{padding:12px 3px 10px 60px;background:#fff url(../../img/logo-eric-ferber-40.png) no-repeat top left}
 .page-header a:hover{text-decoration:none}
 .navbar{margin-bottom:10px}
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{border-bottom:1px solid #222}
