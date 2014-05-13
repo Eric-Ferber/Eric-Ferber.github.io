@@ -30,6 +30,32 @@
       500 : -500
 #####################################################""
 
+- nom : Circle 2
+  legende : ~
+  dimensions : hauteur 2,8 mètres
+  materiaux  : tôle aluminium
+  finition  : laquage rouge ral 3002 mat
+  image :
+    base  : circle-2
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################""
+
+- nom : Circle 4
+  legende : ~
+  dimensions : Hauteur avec socle 2,8 mètres
+  materiaux  : tôle aluminium
+  finition  : laquage blanc ral 9016
+  image :
+    base  : circle-4
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
 - nom : Ezo
   legende : ~
   dimensions : hauteur 2,5 mètres
@@ -63,6 +89,32 @@
   finitions  :
   image :
     base  : dragon-1
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################"
+
+- nom : Amour
+  legende : Inspiré par le symbole de l'amour"Kandji Japonais"
+  dimensions : Hauteur 1.5 mètres
+  materiaux  : tôle aluminium
+  finitions  :
+  image :
+    base  : amour
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################"
+
+- nom : Tranche de vie
+  legende :
+  dimensions : Hauteur 9 mètres
+  materiaux  : tôle acier corten
+  finitions  :
+  image :
+    base  : tranche-de-vie
     thumb : -75
     ext   : .jpg
   formats:
