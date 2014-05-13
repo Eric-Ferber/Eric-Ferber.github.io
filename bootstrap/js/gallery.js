@@ -143,41 +143,32 @@ $(function() {
 
                 $('#img-wrapper-tmpl').tmpl( {itemsCount : itemsCount} ).appendTo( $rgGallery );
 
-                if( false ) {
-                    // addNavigation
-                    var $navPrev        = $rgGallery.find('a.rg-image-nav-prev'),
-                        $navNext        = $rgGallery.find('a.rg-image-nav-next'),
-                        $imgWrapper        = $rgGallery.find('div.rg-image');
+                var $imgWrapper        = $rgGallery.find('div.rg-image');
 
-                    $navPrev.on('click.rgGallery', function( event ) {
-                        _navigate( 'left' );
-                        return false;
-                    });
+                // click the big picture navigates next
+                $imgWrapper.on('click.rgGallery', function( event ) {
+                    _navigate( 'right' );
+                    return false;
+                });
 
-                    $navNext.on('click.rgGallery', function( event ) {
+                // add touchwipe events on the large image wrapper
+                $imgWrapper.touchwipe({
+                    wipeLeft            : function() {
                         _navigate( 'right' );
-                        return false;
-                    });
+                    },
+                    wipeRight            : function() {
+                        _navigate( 'left' );
+                    },
+                    preventDefaultEvents: false
+                });
 
-                    // add touchwipe events on the large image wrapper
-                    $imgWrapper.touchwipe({
-                        wipeLeft            : function() {
-                            _navigate( 'right' );
-                        },
-                        wipeRight            : function() {
-                            _navigate( 'left' );
-                        },
-                        preventDefaultEvents: false
-                    });
-
-                    $(document).on('keyup.rgGallery', function( event ) {
-                        if (event.keyCode == 39)
-                            _navigate( 'right' );
-                        else if (event.keyCode == 37)
-                            _navigate( 'left' );
-                    });
-
-                }
+                $(document).on('keyup.rgGallery', function( event ) {
+                    if (event.keyCode == 39){
+                        _navigate( 'right' );
+                    }else if (event.keyCode == 37){
+                        _navigate( 'left' );
+                    }
+                });
 
             },
             _navigate        = function( dir ) {
@@ -219,15 +210,16 @@ var $thumb        = $item.find('img'),
 var curObj      = EFGallery[id];
 var curImg      = curObj.image
 
-var imgSrc      = curImg['base'] + '{width}' + curImg['ext'],
+var imgSrc      = 'img/oeuvres/' + curImg['base'] + '{width}' + curImg['ext'],
     imgAlt      = 'Eric Ferber - ' + curObj['nom'];
 
+var legende    = curObj["legende"] ? '<br>' + curObj["legende"] : "";
 var dimensions = curObj["dimensions"] ? '<br>Dimensions : ' + curObj["dimensions"] : "";
 var materiaux  = curObj["materiaux"] ? '<br>Materiaux : ' + curObj["materiaux"] : "";
 var finitions  = curObj["finition"] ? '<br>Finition : ' + curObj["finition"] : "";
 
 var imgCaption  = '<strong>' + curObj["nom"] + '</strong>'
-                  + dimensions + materiaux + finitions;
+                  + legende + dimensions + materiaux + finitions;
 
 var imgId		= 'img' + id;
 var imgTarget   = '#' + imgId;
