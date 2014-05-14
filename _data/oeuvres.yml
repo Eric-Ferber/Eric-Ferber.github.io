@@ -70,6 +70,21 @@
       500 : -500
 
 #####################################################"
+
+- nom : Envollée
+  legende : ~
+  dimensions : Hauteur avec socle 2,8 mètres
+  materiaux  : tôle aluminium
+  finition  : laquage jaune ral 1018
+  image :
+    base  : envollee
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
+
 - nom : Ezo
   legende : ~
   dimensions : hauteur 2,5 mètres
