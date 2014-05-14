@@ -222,7 +222,7 @@ $(function() {
 			var materiaux   = curObj["materiaux"] ? '<br>Materiaux : ' + curObj["materiaux"] : "";
 			var finitions   = curObj["finition"] ? '<br>Finition : ' + curObj["finition"] : "";
 
-			var imgLegend   = '<a href="#" class="legendTogle"><small>[ légende ]</small></a>';
+			var imgLegend   = '<a href="#" class="legendTogle"><small>légende</small></a>';
 
 			var imgCaption  = '<strong>' + curObj["nom"] + '</strong>' + legende + dimensions + materiaux + finitions;
 
@@ -238,9 +238,30 @@ $(function() {
 
             $('.legendTogle').click(
                 function(){
-                    $( ".rg-caption-wrapper" ).toggle();
+                    var $caption = $( ".rg-caption-wrapper" );
+                    $caption.toggle();
+
+                    if($caption.is(':visible')){
+                        $(this).hide();
+                    }
+
+                    return false;
                 }
             );
+
+            $('.rg-caption-close').click(
+                function(){
+                    $( ".rg-caption-wrapper" ).hide();
+                    $('.legendTogle').show();
+                    return false;
+                }
+            );
+
+            if($( ".rg-caption-wrapper" ).is(':visible')){
+                $('.legendTogle').hide();
+            }else{
+                $('.legendTogle').show();
+            }
 
             imgCaption = imgCaption.replace(/\"/g, '\'');
 
