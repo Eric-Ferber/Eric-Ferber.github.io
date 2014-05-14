@@ -8,17 +8,19 @@ weight : 40
 <div class="row events">
   <div class="col-md-8 col-md-offset-2">
     <p class="">En dehors de l'exposition permanente dans mon atelier <a href="contact.html">(coordonnées)</a>, vous pouvez me retrouver sur différentes manifestations.</p>
-    <h2>Evénements à venir</h2>
+    {% comment %}<h2>Evénements à venir</h2>{% endcomment %}
     {% assign curDate = site.time | date: '%s' %}
     {% assign printedPastEventTitle = false %}
 
     {% for e in site.data.events %}
         {% if e.show == true %}
             {% assign evtDate = e.endDate | date: '%s' %}
-            {% if evtDate <= curDate and printedPastEventTitle == false %}
-                {% assign printedPastEventTitle = true %}
-                <h2>Evénements passés</h2>
-            {% endif %}
+            {% comment %}
+                {% if evtDate <= curDate and printedPastEventTitle == false %}
+                    {% assign printedPastEventTitle = true %}
+                    <h2>Evénements passés</h2>
+                {% endif %}
+            {% endcomment %}
             <div class="event">
                 <div itemscope itemtype="http://schema.org/Event">
 
