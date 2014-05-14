@@ -879,10 +879,10 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 @media print{.hidden-print{display:none !important}}
 #rg-gallery{margin:0 auto}
 .rg-image-wrapper{position:relative;padding:10px;background:#fff;min-height:520px}
-.rg-image{position:relative;text-align:center;line-height:0;cursor:pointer}
+.rg-image{position:relative;text-align:center;line-height:0;cursor:pointer;border-left:1px solid #222}
 .rg-image img{max-height:100%;max-width:100%}
 .rg-legend-wrapper{position:absolute;top:5px;left:0}
-.rg-legend a{background:#fff;opacity:.8}
+.rg-legend a{background:#fff}
 .rg-caption-wrapper{position:absolute;top:5px;left:0;width:90%;text-align:center;display:none}
 .rg-caption{position:relative;text-align:left}
 .rg-caption p{letter-spacing:2px;padding:0 15px;background:#fff;opacity:.8}
@@ -907,7 +907,7 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .es-nav span.es-nav-next{right:0;left:auto;background-position:115% 50%}
 .es-nav span:hover{opacity:1}
 header{margin:10px 0 20px}
-.navbar-brand{padding:12px 3px 10px 50px;background:#fff url(../../img/logo-eric-ferber-40.png) no-repeat top left}
+.navbar-brand{padding:42px 3px 29px 83px;background:#fff url(../../img/logo-eric-ferber-80.png) no-repeat top left}
 .navbar{margin-bottom:10px}
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{background:#eee}@media (min-width:768px){.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{background:#fff;border-bottom:1px solid #222}}
 .navbar-toggle{margin-right:0}
@@ -920,5 +920,6 @@ blockquote{background:#eee}
 blockquote p{font-style:italic}
 blockquote footer,blockquote small,blockquote .small{color:#333}
 .img-thumbnail{border-radius:0}
-footer.footer{font-size:12px;border-top:1px solid #ddd;margin-top:20px}
+footer.footer{font-size:12px;margin-top:20px}
+footer a{color:#999;border:none}
 .events hr{margin-bottom:2px}
