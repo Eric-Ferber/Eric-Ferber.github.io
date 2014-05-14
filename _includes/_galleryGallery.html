@@ -11,9 +11,9 @@
             {% for o in include.collection %}
                 {% assign i        = o.image %}
 
-                {% assign thumbUrl = 'img/oeuvres/' | append : i.base | append : i.thumb | append : i.ext %}
+                {% assign thumbUrl = 'img/oeuvres/thumbs/' | append : i.base | append : i.thumb | append : i.ext %}
 
-                {% assign imgAlt   = o.name | append : ' - ' | append : o.dimensions %}
+                {% assign imgAlt   = o.name | append : ' - Eric Ferbert' %}
 
                 {% assign index    = forloop.index | minus: 1 %}
               <li>
