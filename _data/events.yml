@@ -15,6 +15,18 @@
   comments:
   show : true
 
+- name: Jardins, Jardin
+  description: Jardins, Jardin est l’événement jardin et design d’extérieur au cœur de Paris
+  site: http://www.jardinsjardin.com/
+  startDate: 6/06/2014
+  endDate: 9/06/2014
+  adresse: Jardin des Tuilleries
+  city: Paris
+  postCode: 75001
+  country: France
+  comments:
+  show : true
+
 - name: Salon Résonances
   description: Salon européen des métiers d'art
   site: http://salon-resonances.com/

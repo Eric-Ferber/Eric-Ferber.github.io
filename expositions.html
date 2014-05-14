@@ -21,6 +21,13 @@ weight : 40
                     <h2>Evénements passés</h2>
                 {% endif %}
             {% endcomment %}
+
+            {% if evtDate <= curDate and printedPastEventTitle == false %}
+                {% assign printedPastEventTitle = true %}
+                <hr>
+                <p class="pastEventMarker"><small>Manifestations passées</small></p>
+            {% endif %}
+
             <div class="event">
                 <div itemscope itemtype="http://schema.org/Event">
 

@@ -921,3 +921,4 @@ blockquote p{font-style:italic}
 blockquote footer,blockquote small,blockquote .small{color:#333}
 .img-thumbnail{border-radius:0}
 footer.footer{font-size:12px;border-top:1px solid #ddd;margin-top:20px}
+.events hr{margin-bottom:2px}
