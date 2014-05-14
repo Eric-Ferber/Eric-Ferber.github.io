@@ -90,6 +90,102 @@
       500 : -500
 
 #####################################################"
+- nom : Gitane
+  legende : ~
+  dimensions : Hauteur avec socle 2,8 mètres
+  materiaux  : tôle aluminium
+  image :
+    base  : gitane
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
+- nom : La Vie
+  legende : ~
+  dimensions : Hauteur avec socle 4,5 mètres
+  materiaux  : tôle aluminium
+  image :
+    base  : la-vie
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
+- nom : Interrogation
+  legende : ~
+  dimensions : Hauteur avec socle 2,8 mètres
+  materiaux  : tôle aluminium
+  image :
+    base  : interrogation
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
+- nom : Passion
+  legende :
+  dimensions : Hauteur avec socle 2,8 mètres
+  materiaux  : tôle acier corten et inox
+  image :
+    base  : passion
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
+- nom : Sérénité
+  legende :
+  dimensions : Hauteur avec socle 2,8 mètres
+  materiaux  : tôle aluminium
+  image :
+    base  : serenite
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
+- nom : Silhouette 1
+  legende :
+  dimensions : Hauteur 2 mètres
+  materiaux  : tôle aluminium
+  image :
+    base  : silhouette-1
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
+- nom : Silhouette 3
+  legende :
+  dimensions : Hauteur 2 mètres
+  materiaux  : tôle aluminium
+  image :
+    base  : silhouette-3
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
+- nom : Symphonie
+  legende :
+  dimensions : Hauteur 3.5 mètres
+  materiaux  : tôle acier corten
+  image :
+    base  : symphonie
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+
+#####################################################"
 
 - nom : Ezo
   legende : ~
@@ -117,54 +213,6 @@
 
 - nom : Amour
   legende : Inspiré par le symbole de l'amour "Kandji Japonais"
-  dimensions : Hauteur 1.5 mètres
-  materiaux  : tôle aluminium
-  image :
-    base  : amour
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-#####################################################"
-
-- nom : Candide
-  legende : ~
-  dimensions : hauteur 0.8 mètres
-  materiaux  : tôle acier corten
-  image :
-    base  : candide
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-#####################################################"
-
-- nom : Tranche de vie
-  legende :
-  dimensions : Hauteur 9 mètres
-  materiaux  : tôle acier corten
-  image :
-    base  : tranche-de-vie
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-#####################################################"
-
-- nom : Dragon
-  legende : Inspiré par le symbole du dragon "Kandji Japonais"
-  dimensions : Hauteur 1.5 mètres
-  materiaux  : tôle acier corten
-  image :
-    base  : dragon-1
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-#####################################################"
-
-- nom : Amour
-  legende : Inspiré par le symbole de l'amour"Kandji Japonais"
   dimensions : Hauteur 1.5 mètres
   materiaux  : tôle aluminium
   image :
