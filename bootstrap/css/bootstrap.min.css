@@ -914,8 +914,10 @@ header{margin:10px 0 20px}
 .navbar-nav>li>a{padding-top:0;padding-bottom:5px}
 .content a,footer a{border-bottom:1px dotted #222}
 .content a:hover,footer a:hover{border-bottom:1px solid #222;text-decoration:none}
+a.externalLink{background:#fff url(../../img/external_link_icon.gif) no-repeat top right;padding-right:13px}
 h1{color:#555}
 blockquote{background:#eee}
 blockquote p{font-style:italic}
+blockquote footer,blockquote small,blockquote .small{color:#333}
 .img-thumbnail{border-radius:0}
 footer.footer{font-size:12px;border-top:1px solid #ddd;margin-top:20px}
