@@ -5,77 +5,55 @@ menu: main
 weight : 40
 ---
 
-<div class="row">
+<div class="row events">
   <div class="col-md-8 col-md-offset-2">
+    <p class="">En dehors de l'exposition permanente dans mon atelier <a href="contact.html">(coordonnées)</a>, vous pouvez me retrouver sur différentes manifestations.</p>
+    <h2>Evénements à venir</h2>
+    {% assign curDate = site.time | date: '%s' %}
+    {% assign printedPastEventTitle = false %}
 
-    <p>En dehors de l'exposition permanente dans mon atelier <a href="contact.html">(coordonées)</a>, vous pouvez me retrouver sur différentes manifestation.</p>
+    {% for e in site.data.events %}
+        {% if e.show == true %}
+            {% assign evtDate = e.endDate | date: '%s' %}
+            {% if evtDate <= curDate and printedPastEventTitle == false %}
+                {% assign printedPastEventTitle = true %}
+                <h2>Evénements passés</h2>
+            {% endif %}
+            <div class="event">
+                <div itemscope itemtype="http://schema.org/Event">
 
-<h2>Evénements à venir</h2>
+                    <h3 itemprop="name">
+                        {{e.name}}
+                    </h3>
+                    {% if e.site %}
+                     Site : <a itemprop="url" href="{{e.site}}">{{e.site}}</a>
+                    {% endif %}
+                    <div itemprop="description"></div>
+                    <div>
+                        {% if e.endDate %}
+                            <meta itemprop="startDate" content="{{ e.startDate | date: '%Y-%d-%m' }}">du {{ e.startDate | date: '%d/%m/%Y' }}
+                            <meta itemprop="endDate" content="{{ e.endDate | date: '%Y-%d-%m' }}">au {{ e.endDate | date: '%d/%m/%Y' }}
+                        {% else %}
+                            <meta itemprop="startDate" content="{{ e.startDate | date: '%Y-%d-%m' }}">le {{ e.startDate | date: '%d/%m/%Y' }}
+                        {% endif %}
+                    </div>
 
-{% assign curDate = site.time | date: '%s' %}
-
-{% for e in site.data.events %}
-
-<p>current date timestamp is : {{curDate}}</p>
-
-{% assign evtDate = e.startDate | date: '%s' %}
-
-<p>event start date timestamp is : {{evtDate}}</p>
-
-<time>toto {{ nowunix }}</time>
-
-
-
-
-
-
-    {% assign i        = e.name %}
-<h1>{{ i }}</h1>
-{{ site.time | date: '%Y' }}
-
-
-<div itemscope itemtype="http://schema.org/Event">
-    <a itemprop="url" href="">
-        <div itemprop="name">
-            <strong></strong>
-        </div>
-    </a>
-    <div itemprop="description"></div>
-    <div>
-        <meta itemprop="startDate" content="2013-11-08T10:00">du :
-        <meta itemprop="endDate" content="2013-11-11:00.000">au :
-    </div>
-
-</div>
-<div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
-    <div itemprop="streetAddress"></div>
-    <div><span itemprop="addressLocality"></span></div>
-    <div itemprop="postalCode"></div>
-    <div itemprop="addressCountry"></div>
-</div>
-
+                </div>
+                <div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+                    <div>
+                        <span itemprop="streetAddress">{{ e.adresse }}</span>
+                        <br><span itemprop="postalCode">{{ e.postCode }}</span>
+                         - <span itemprop="addressLocality">{{ e.city }}</span>
+                         - <span itemprop="addressCountry">{{ e.country }}</span>
+                    </div>
+                </div>
+                {% if e.comments %}
+                <div class="eventComments">
+                    <p>{{ e.comments }}</p>
+                </div>
+                {% endif %}
+            </div>
+        {% endif %}
     {% endfor %}
-
-
-
-
-
-
-
-<p><a href="http://www.jardinsjardin.com/">Paris
-75000 Jardin Jardinsau tuilleries du 31 mai au 3 juin 201</a>3</p>
-<p><a href="http://www.artspire.fr/">Nancy
-54000
-place carrière
-15 et 16 juin</a> 2013</p>
-<p><a href="http://www.rencontredejardins.com/">Gassin
-83000du 06 au 09 septembre 2013</a></p>
-<p><a href="http://www.jardinsfruitiersdelaquenexy.com/index.php/nos-actualites/la-fete-des-jardins-et-des-saveurs">Laquenexy
-57000 du 04 au 06 octobre  2013</a></p>
-<p><a href="http://www.salon-resonances.com/fr/">Strasbourg
-67000 du 08 au 11 novembre 201</a>3</p>
-
-
-
   </div>
 </div>

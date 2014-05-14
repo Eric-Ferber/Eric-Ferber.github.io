@@ -1,5 +1,19 @@
+# les expos
+# classement par ordre chronologique inverse
+# les plus récentes sont en haut de la page
+# l'ordre est important !!!!
 
-
+- name: Salon Résonances
+  description: Salon européen des métiers d'art
+  site: http://salon-resonances.com/
+  startDate: 7/11/2014
+  endDate: 11/11/2014
+  adresse: Parc des Expositions du Waken
+  city: Strasbourg
+  postCode: 67000
+  country: France
+  comments:
+  show : true
 
 - name: Salon Résonances
   description: Salon européen des métiers d'art
@@ -7,9 +21,21 @@
   startDate: 8/11/2013
   endDate: 11/11/2013
   adresse: Parc des Expositions du Waken
-  ville: Strasbourg
+  city: Strasbourg
   postCode: 67000
   country: France
-  comments: retrouvez moi au stand 23
+  comments:
+  show : true
 
+- name: Fête des Jardins et des Saveurs
+  description:
+  site: http://www.jardinsfruitiersdelaquenexy.com/
+  startDate: 4/11/2013
+  endDate: 6/11/2013
+  adresse: Les Jardins Fruitiers - 4 rue Bourger et Perrin
+  city: Laquenexy
+  postCode: 57530
+  country: France
+  comments:
+  show : true
 
