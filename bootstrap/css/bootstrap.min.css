@@ -881,9 +881,11 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .rg-image-wrapper{position:relative;padding:10px;background:#fff;min-height:20px}
 .rg-image{position:relative;text-align:center;line-height:0;cursor:pointer}
 .rg-image img{max-height:100%;max-width:100%}
-.rg-caption-wrapper{background:#fff;position:absolute;bottom:0;right:0;opacity:.8;width:100%;text-align:center}
-.rg-caption{text-align:center;margin-top:15px;position:relative}
-.rg-caption p{letter-spacing:2px;padding:0 15px}
+.rg-legend-wrapper{position:absolute;top:10px;left:0}
+.rg-legend a{background:#fff;opacity:.8}
+.rg-caption-wrapper{position:absolute;bottom:5px;left:0;width:90%;text-align:center;display:none}
+.rg-caption{text-align:left}
+.rg-caption p{letter-spacing:2px;padding:0 15px;background:#fff;opacity:.8}
 .rg-view{height:30px}
 .rg-view a{display:block;float:right;width:16px;height:16px;margin-right:3px;background:#464646 url(../../img/views.png) no-repeat top left;border:3px solid #464646;opacity:.8}
 .rg-image-nav a{position:absolute;top:0;left:0;background:#ddd url(../../img/nav-black.png) no-repeat -20% 50%;width:28px;height:100%;text-indent:-9000px;cursor:pointer;opacity:.4;outline:none}
@@ -894,15 +896,15 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .rg-view a.rg-view-selected{background-color:#6f6f6f;border-color:#6f6f6f}
 .rg-view a.rg-view-thumbs{background-position:0 -16px}
 .rg-loading{width:46px;height:46px;position:absolute;top:50%;left:50%;background:#000 url(../../img/ajax-loader.gif) no-repeat center center;margin:-23px 0 0 -23px;z-index:100;opacity:.7}
-.es-carousel-wrapper{background:#fff;padding:10px 5em 0;position:relative;margin-bottom:0}
+.es-carousel-wrapper{background:#fff;padding:10px 25px 0;position:relative;margin-bottom:0}
 .es-carousel{overflow:hidden;background:#fff;padding:0}
 .es-carousel ul{display:none;list-style:none;margin:0;padding:0}
 .es-carousel ul li{height:100%;float:left;display:block}
 .es-carousel ul li a{display:block;border-style:solid;border-color:#fff;opacity:.8;-webkit-touch-callout:none;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 .es-carousel ul li.selected a{border-color:#666;opacity:1}
 .es-carousel ul li a img{display:block;border:none;max-height:100%;max-width:100%}
-.es-nav span{position:absolute;top:50%;left:0;background:#fff;width:5em;height:71px;cursor:pointer;opacity:.4;outline:none;vertical-align:bottom}
-.es-nav span.es-nav-next{right:0;left:auto}
+.es-nav span{position:absolute;top:9px;left:0;background:#fff url(../../img/nav-black.png) no-repeat -20% 50%;width:25px;height:71px;text-indent:-9000px;cursor:pointer;opacity:.4;outline:none;vertical-align:bottom}
+.es-nav span.es-nav-next{right:0;left:auto;background-position:115% 50%}
 .es-nav span:hover{opacity:1}
 header{margin:10px 0 20px}
 .navbar-brand{padding:12px 3px 10px 50px;background:#fff url(../../img/logo-eric-ferber-40.png) no-repeat top left}

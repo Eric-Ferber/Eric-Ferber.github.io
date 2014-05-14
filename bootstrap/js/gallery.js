@@ -213,23 +213,20 @@ $(function() {
 
 			var curObj      = EFGallery[id];
 			var curImg      = curObj.image;
-			var imgSrc      = 'img/oeuvres/' + curImg['base']
-							  + '{width}' + curImg['ext'];
+
+			var imgSrc      = 'img/oeuvres/' + curImg['base'] + '{width}' + curImg['ext'];
 			var imgAlt      = 'Eric Ferber - ' + curObj['nom'];
+
 			var legende     = curObj["legende"] ? '<br>' + curObj["legende"] : "";
-			var dimensions  = curObj["dimensions"] ? '<br>Dimensions : '
-			                 + curObj["dimensions"] : "";
+			var dimensions  = curObj["dimensions"] ? '<br>Dimensions : ' + curObj["dimensions"] : "";
+			var materiaux   = curObj["materiaux"] ? '<br>Materiaux : ' + curObj["materiaux"] : "";
+			var finitions   = curObj["finition"] ? '<br>Finition : ' + curObj["finition"] : "";
 
-			var materiaux   = curObj["materiaux"] ? '<br>Materiaux : '
-			                 + curObj["materiaux"] : "";
+			var imgLegend   = '<a href="#" class="legendTogle"><small>[ légende ]</small></a>';
 
-			var finitions   = curObj["finition"] ? '<br>Finition : '
-			                 + curObj["finition"] : "";
+			var imgCaption  = '<strong>' + curObj["nom"] + '</strong>' + legende + dimensions + materiaux + finitions;
 
-			var imgLegend   = '<strong>' + curObj["nom"] + '</strong> <small><a href="#" class="legend">[ légende ]  ' + '</a></small>'
-
-			var imgCaption  = legende + dimensions + materiaux + finitions;
-			var imgId		= 'img' + id;
+            var imgId		= 'img' + id;
 			var imgTarget   = '#' + imgId;
 			var imagerTpl   = '<div id="' + imgId + '" data-src="' + imgSrc
 			                  + '" data-alt="' + imgAlt
@@ -239,8 +236,15 @@ $(function() {
 
 			$rgGallery.find('div.rg-legend').children('p').empty().html( imgLegend );
 
-			// building the popover
-			_builPopover(imgCaption);
+            $('.legendTogle').click(
+                function(){
+                    $( ".rg-caption-wrapper" ).toggle();
+                }
+            );
+
+            imgCaption = imgCaption.replace(/\"/g, '\'');
+
+			$rgGallery.find('div.rg-caption').children('p').empty().html( imgCaption );
 
 	        $loader.hide();
 
@@ -254,13 +258,6 @@ $(function() {
 			var imgrFlickr = new Imager( imgTarget, {
 			    availableWidths: curObj.formats
 			});
-
-        },
-        _builPopover = function( imgCaption ){
-
-			imgCaption = '<a href="#" data-toggle="popover" data-html="true" data-content="<div><b>Popover Example</b> 1 - Content</div>" title="Popover Example <b>1</b> - Title">Popover Example 1</a>';
-
-			$rgGallery.find('div.rg-caption').show().children('p').empty().html( imgCaption );
 
         },
         addItems        = function( $new ) {
