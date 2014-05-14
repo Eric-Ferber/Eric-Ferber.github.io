@@ -286,15 +286,6 @@ $(function() {
             $items        = $items.add( $($new) );
             itemsCount    = $items.length;
             $esCarousel.elastislide( 'add', $new );
-        },
-        _arrayify  = function() {
-            // deprecated EFGallery is now used directly in _showImage code
-            var c  = [],
-                index;
-            for (index = 0; index < EFGallery.length; ++index) {
-                c  = EFGallery[index];
-                imgDatas[c.id] = c;
-            }
         };
 
         // returning public methods
