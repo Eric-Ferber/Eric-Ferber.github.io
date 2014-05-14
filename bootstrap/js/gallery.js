@@ -220,11 +220,10 @@ $(function() {
 			var legende     = curObj["legende"] ? '<br>' + curObj["legende"] : "";
 			var dimensions  = curObj["dimensions"] ? '<br>Dimensions : ' + curObj["dimensions"] : "";
 			var materiaux   = curObj["materiaux"] ? '<br>Materiaux : ' + curObj["materiaux"] : "";
-			var finitions   = curObj["finition"] ? '<br>Finition : ' + curObj["finition"] : "";
 
 			var imgLegend   = '<a href="#" class="legendTogle"><small>légende</small></a>';
 
-			var imgCaption  = '<strong>' + curObj["nom"] + '</strong>' + legende + dimensions + materiaux + finitions;
+			var imgCaption  = '<strong>' + curObj["nom"] + '</strong>' + legende + dimensions + materiaux;
 
             var imgId		= 'img' + id;
 			var imgTarget   = '#' + imgId;

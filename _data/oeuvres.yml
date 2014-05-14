@@ -13,8 +13,6 @@
   dimensions : ~ # Hauteur avec socle 2,8 mètres
 # materiaux (facultatif)
   materiaux  : tôle aluminium
-# finition (facultatif)
-  finition  : laquage rouge ral 3002 mat
 # caracteristiques des images
   image :
 # le nom d'image "candide-75.jpg" est constitié de :
@@ -34,7 +32,6 @@
   legende : ~
   dimensions : hauteur 2,8 mètres
   materiaux  : tôle aluminium
-  finition  : laquage rouge ral 3002 mat
   image :
     base  : circle-2
     thumb : -75
@@ -47,7 +44,6 @@
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
   materiaux  : tôle aluminium
-  finition  : laquage blanc ral 9016
   image :
     base  : circle-4
     thumb : -75
@@ -61,7 +57,6 @@
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
   materiaux  : tôle aluminium
-  finition  : laquage rouge ral 3002 mat
   image :
     base  : circle-5
     thumb : -75
@@ -75,7 +70,6 @@
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
   materiaux  : tôle aluminium
-  finition  : laquage jaune ral 1018
   image :
     base  : envollee
     thumb : -75
@@ -88,7 +82,6 @@
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
   materiaux  : tôle aluminium
-  finition  : laquage rouge ral 3002 mat
   image :
     base  : essai
     thumb : -75
@@ -102,7 +95,6 @@
   legende : ~
   dimensions : hauteur 2,5 mètres
   materiaux  : tôle aluminium
-  finition  : laquage sablé antracite Tiger 29/71335
   image :
     base  : ezo
     thumb : -75
@@ -115,7 +107,6 @@
   legende : Inspiré par le symbole du dragon "Kandji Japonais"
   dimensions : Hauteur 1.5 mètres
   materiaux  : tôle acier corten
-  finitions  :
   image :
     base  : dragon-1
     thumb : -75
@@ -128,7 +119,6 @@
   legende : Inspiré par le symbole de l'amour "Kandji Japonais"
   dimensions : Hauteur 1.5 mètres
   materiaux  : tôle aluminium
-  finitions  :
   image :
     base  : amour
     thumb : -75
@@ -141,7 +131,6 @@
   legende : ~
   dimensions : hauteur 0.8 mètres
   materiaux  : tôle acier corten
-  finitions  :
   image :
     base  : candide
     thumb : -75
@@ -154,7 +143,6 @@
   legende :
   dimensions : Hauteur 9 mètres
   materiaux  : tôle acier corten
-  finitions  :
   image :
     base  : tranche-de-vie
     thumb : -75
@@ -167,7 +155,6 @@
   legende : Inspiré par le symbole du dragon "Kandji Japonais"
   dimensions : Hauteur 1.5 mètres
   materiaux  : tôle acier corten
-  finitions  :
   image :
     base  : dragon-1
     thumb : -75
@@ -180,7 +167,6 @@
   legende : Inspiré par le symbole de l'amour"Kandji Japonais"
   dimensions : Hauteur 1.5 mètres
   materiaux  : tôle aluminium
-  finitions  :
   image :
     base  : amour
     thumb : -75
@@ -193,7 +179,6 @@
   legende : ~
   dimensions : hauteur 0.8 mètres
   materiaux  : tôle acier corten
-  finitions  :
   image :
     base  : candide
     thumb : -75
@@ -206,7 +191,6 @@
   legende :
   dimensions : Hauteur 9 mètres
   materiaux  : tôle acier corten
-  finitions  :
   image :
     base  : tranche-de-vie
     thumb : -75
