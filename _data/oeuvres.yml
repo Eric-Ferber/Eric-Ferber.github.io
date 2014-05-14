@@ -82,6 +82,19 @@
     ext   : .jpg
   formats:
       500 : -500
+#####################################################"
+
+- nom : Essai
+  legende : ~
+  dimensions : Hauteur avec socle 2,8 mètres
+  materiaux  : tôle aluminium
+  finition  : laquage rouge ral 3002 mat
+  image :
+    base  : essai
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
 
 #####################################################"
 
@@ -137,6 +150,70 @@
       500 : -500
 #####################################################"
 
+- nom : Tranche de vie
+  legende :
+  dimensions : Hauteur 9 mètres
+  materiaux  : tôle acier corten
+  finitions  :
+  image :
+    base  : tranche-de-vie
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################"
+
+- nom : Tranche de vie
+  legende :
+  dimensions : Hauteur 9 mètres
+  materiaux  : tôle acier corten
+  finitions  :
+  image :
+    base  : tranche-de-vie
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################"
+
+- nom : Tranche de vie
+  legende :
+  dimensions : Hauteur 9 mètres
+  materiaux  : tôle acier corten
+  finitions  :
+  image :
+    base  : tranche-de-vie
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################"
+
+- nom : Tranche de vie
+  legende :
+  dimensions : Hauteur 9 mètres
+  materiaux  : tôle acier corten
+  finitions  :
+  image :
+    base  : tranche-de-vie
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################"
+
+- nom : Tranche de vie
+  legende :
+  dimensions : Hauteur 9 mètres
+  materiaux  : tôle acier corten
+  finitions  :
+  image :
+    base  : tranche-de-vie
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################"
 
 - nom : Tranche de vie
   legende :
