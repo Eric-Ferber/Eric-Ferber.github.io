@@ -218,8 +218,8 @@ $(function() {
 			var imgAlt      = 'Eric Ferber - ' + curObj['nom'];
 
 			var legende     = curObj["legende"] ? '<br>' + curObj["legende"] : "";
-			var dimensions  = curObj["dimensions"] ? '<br>Dimensions : ' + curObj["dimensions"] : "";
-			var materiaux   = curObj["materiaux"] ? '<br>Materiaux : ' + curObj["materiaux"] : "";
+			var dimensions  = curObj["dimensions"] ? '<br>' + curObj["dimensions"] : "";
+			var materiaux   = curObj["materiaux"] ? '<br>' + curObj["materiaux"] : "";
 
 			var imgLegend   = '<a href="#" class="legendTogle"><small>légende</small></a>';
 

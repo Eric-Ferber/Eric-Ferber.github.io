@@ -913,7 +913,7 @@ header{margin:10px 0 20px}
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{background:#eee}@media (min-width:768px){.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{background:#fff;border-bottom:1px solid #222}}
 .navbar-toggle{margin-right:0}
 .navbar-nav>li>a{padding-top:0;padding-bottom:5px}
-.content a,footer a{border-bottom:1px dotted #222}
+.content a,footer a{border-bottom:1px solid #222}
 .content a:hover,footer a:hover{border-bottom:1px solid #222;text-decoration:none}
 a.externalLink{background:#fff url(../../img/external_link_icon.gif) no-repeat top right;padding-right:13px}
 h1{color:#555}
