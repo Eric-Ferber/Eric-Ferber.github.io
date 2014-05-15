@@ -878,8 +878,8 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}
 @media print{.hidden-print{display:none !important}}
 #rg-gallery{margin:0 auto}
-.rg-image-wrapper{position:relative;padding:10px;background:#fff;min-height:520px}
-.rg-image{position:relative;text-align:center;line-height:0;cursor:pointer;border-left:1px solid #222}
+.rg-image-wrapper{position:relative;padding:10px;background:#fff}
+.rg-image{position:relative;text-align:center;line-height:0;cursor:pointer;border-left:1px solid #222;min-height:500px}
 .rg-image img{max-height:100%;max-width:100%}
 .rg-legend-wrapper{position:absolute;top:5px;left:0}
 .rg-legend a{background:#fff}
