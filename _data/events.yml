@@ -25,6 +25,7 @@
   postCode: 75001
   country: France
   comments:
+  image: affiche-jardins-jardin-2014-300.jpg
   show : true
 
 - name: Salon Résonances
@@ -37,6 +38,7 @@
   postCode: 67000
   country: France
   comments:
+  image:
   show : true
 
 - name: Fête des Jardins et des Saveurs
@@ -49,5 +51,6 @@
   postCode: 57530
   country: France
   comments:
+  image:
   show : true
 

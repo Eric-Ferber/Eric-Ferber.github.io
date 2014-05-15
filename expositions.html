@@ -22,11 +22,25 @@ weight : 40
                 {% endif %}
             {% endcomment %}
 
+<hr>
+
             {% if evtDate <= curDate and printedPastEventTitle == false %}
                 {% assign printedPastEventTitle = true %}
-                <hr>
+
                 <p class="pastEventMarker"><small>Manifestations passées</small></p>
             {% endif %}
+
+<div class="row">
+
+{% if e.image %}
+<div class="col-md-4 eventImage">
+    <img src="/img/events/{{ e.image }}" alt="{{e.name}}">
+</div>
+{% endif %}
+
+
+
+  <div class="col-md-4">
 
             <div class="event">
                 <div itemscope itemtype="http://schema.org/Event">
@@ -62,6 +76,14 @@ weight : 40
                 </div>
                 {% endif %}
             </div>
+    </div>
+
+
+
+
+</div>
+
+
         {% endif %}
     {% endfor %}
   </div>
