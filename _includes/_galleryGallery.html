@@ -11,7 +11,7 @@
             {% for o in include.collection %}
                 {% assign i        = o.image %}
 
-                {% assign thumbUrl = 'img/oeuvres/thumbs/' | append : i.base | append : i.thumb | append : i.ext %}
+                {% assign thumbUrl = include.imagesPath | append : 'thumbs/' | append : i.base | append : i.thumb | append : i.ext %}
 
                 {% assign imgAlt   = o.name | append : ' - Eric Ferbert' %}
 
@@ -33,4 +33,5 @@
 
 <script>
 var EFGallery = {{ include.collection | jsonify }};
+var EFGalleryImagesPath = '{{ include.imagesPath }}';
 </script>

@@ -10,7 +10,7 @@
 # dimensions (facultatif)
 # exemple : hauteur 23 mètres
 # vide : ~
-  dimensions : ~ # Hauteur avec socle 2,8 mètres
+  dimensions : Hauteur avec socle 2,8 mètres
 # materiaux (facultatif)
   materiaux  : tôle aluminium
 # caracteristiques des images
@@ -26,7 +26,7 @@
 # différents formats possibles
   formats:
       500 : -500
-#####################################################""
+#######################################################
 
 - nom : Circle 2
   legende : ~
@@ -38,7 +38,7 @@
     ext   : .jpg
   formats:
       500 : -500
-#####################################################""
+#######################################################
 
 - nom : Circle 4
   legende : ~

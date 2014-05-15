@@ -214,7 +214,7 @@ $(function() {
 			var curObj      = EFGallery[id];
 			var curImg      = curObj.image;
 
-			var imgSrc      = 'img/oeuvres/' + curImg['base'] + '{width}' + curImg['ext'];
+			var imgSrc      = EFGalleryImagesPath + curImg['base'] + '{width}' + curImg['ext'];
 			var imgAlt      = 'Eric Ferber - ' + curObj['nom'];
 
 			var legende     = curObj["legende"] ? '<br>' + curObj["legende"] : "";

@@ -1,0 +1,54 @@
+# Description des objets pour la galerie objets
+
+# Nom de l'objet tel qu'il apparaît dans la légende
+# nb : tiret important
+- nom : Infinitie
+# legende (facultatif)
+# exemple : hauteur 23 mètres
+# vide : ~
+  legende : Luminaire
+# dimensions (facultatif)
+# exemple : hauteur 23 mètres
+# vide : ~
+  dimensions : Hauteur avec socle 1,8 mètre
+# materiaux (facultatif)
+  materiaux  : tôle aluminium
+# caracteristiques des images
+  image :
+# le nom d'image "candide-75.jpg" est constitié de :
+#  - la base "candide"
+#  - l'indication de sa largeur "-75"
+#  - son extension (ext) ".jpg"
+    base  : infinitie
+    thumb : -75
+# extension autorisés : .png et .jpg
+    ext   : .jpg
+# différents formats possibles
+  formats:
+      500 : -500
+#####################################################
+
+- nom : Tulipe dans le vent
+  legende : Fontaine
+  dimensions : hauteur 1,2 mètres
+  materiaux  : tôle inox brossé
+  image :
+    base  : tulipe_dans_le_vent-4
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################
+
+- nom : Ananas
+  legende :
+  dimensions : hauteur 1,2 mètres
+  materiaux  : tôle inox brossé
+  image :
+    base  : ananas
+    thumb : -75
+    ext   : .jpg
+  formats:
+      500 : -500
+#####################################################
+
