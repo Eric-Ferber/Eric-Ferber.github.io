@@ -1,4 +1,4 @@
 Eric-Ferber.github.io
 =====================
 
-Code du Site d'[http://eric-ferber.fr](Eric Ferber - Sculpteur)
+Code du Site d'[Eric Ferber - Sculpteur](http://eric-ferber.fr)
