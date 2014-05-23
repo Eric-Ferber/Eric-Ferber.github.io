@@ -270,7 +270,8 @@ $(function() {
 
 	        if( mode === 'carousel' ) {
 	            $esCarousel.elastislide( 'reload' );
-	            $esCarousel.elastislide( 'setCurrent', current );
+                // this is a trick !!
+	            $esCarousel.elastislide( 'setCurrent', id );
 	        }
 
 	        anim    = false;
