@@ -1,0 +1,32 @@
+---
+layout: default
+title: Test page
+menu: no-menu
+weight : 1
+---
+
+
+
+{% assign navElements = site.pages | sort: 'weight' %}
+{% for p in navElements %}
+{% if p.menu == 'main' %}
+<li{% if p.url == page.url %} class="active"{% endif %}>
+<a href="{{ p.url }}">{{ p.title }}</a>
+</li>
+{% endif %}
+{% endfor %}
+
+<hr>
+
+{% for weight in (1..100) %}
+{% for p in site.pages %}
+{% if p.menu == 'main' %}
+{% if p.weight == weight %}
+<li{% if p.url == page.url %} class="active"{% endif %}>
+<a href="{{ p.url }}">{{ p.title }}</a>
+</li>
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
