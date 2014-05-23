@@ -9,8 +9,7 @@
         </div>
         <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
           <ul class="nav navbar-nav">
-{% assign navElements = site.pages | sort: 'weight' %}{% for p in navElements %}{% if p.menu == 'main' %}
-<li{% if p.url == page.url %} class="active"{% endif %}><a href="{{ p.url }}">{{ p.title }}</a></li>{% endif %}{% endfor %}
+{% for weight in (1..100) %}{% for p in site.pages %}{% if p.menu == 'main' %}{% if p.weight == weight %}<li{% if p.url == page.url %} class="active"{% endif %}><a href="{{ p.url }}">{{ p.title }}</a></li>{% endif %}{% endif %}{% endfor %}{% endfor %}
           </ul>
         </div>
       </div>
