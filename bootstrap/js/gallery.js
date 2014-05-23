@@ -14,40 +14,40 @@ $(function() {
     // original: mit license. paul irish. 2010.
     // contributors: Oren Solomianik, David DeSandro, Yiannis Chatzikonstantinou
 
-    $.fn.imagesLoaded         = function( callback ) 	{
+    $.fn.imagesLoaded         = function( callback )     {
 
-	    var $images = this.find('img'),
-	        len     = $images.length,
-	        _this     = this,
-	        blank     = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+        var $images = this.find('img'),
+            len     = $images.length,
+            _this     = this,
+            blank     = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 
-	    function triggerCallback() {
-	        callback.call( _this, $images );
-	    }
+        function triggerCallback() {
+            callback.call( _this, $images );
+        }
 
-	    function imgLoaded() {
-	        if ( --len <= 0 && this.src !== blank ){
-	            setTimeout( triggerCallback );
-	            $images.off( 'load error', imgLoaded );
-	        }
-	    }
+        function imgLoaded() {
+            if ( --len <= 0 && this.src !== blank ){
+                setTimeout( triggerCallback );
+                $images.off( 'load error', imgLoaded );
+            }
+        }
 
-	    if ( !len ) {
-	        triggerCallback();
-	    }
+        if ( !len ) {
+            triggerCallback();
+        }
 
-	    $images.on( 'load error',  imgLoaded ).each( function() {
-	        // cached images don't fire load sometimes, so we reset src.
-	        if (this.complete || this.complete === undefined){
-	            var src = this.src;
-	            // webkit hack from http://groups.google.com/group/jquery-dev/browse_thread/thread/eee6ab7b2da50e1f
-	            // data uri bypasses webkit log warning (thx doug jones)
-	            this.src = blank;
-	            this.src = src;
-	        }
-	    });
+        $images.on( 'load error',  imgLoaded ).each( function() {
+            // cached images don't fire load sometimes, so we reset src.
+            if (this.complete || this.complete === undefined){
+                var src = this.src;
+                // webkit hack from http://groups.google.com/group/jquery-dev/browse_thread/thread/eee6ab7b2da50e1f
+                // data uri bypasses webkit log warning (thx doug jones)
+                this.src = blank;
+                this.src = src;
+            }
+        });
 
-	    return this;
+        return this;
     };
 
     // gallery container
@@ -64,7 +64,7 @@ $(function() {
         var current            = 0,
             // mode : carousel || fullview
             mode             = 'carousel',
-         	   // control if one image is being loaded
+                // control if one image is being loaded
             anim            = false,
         init            = function() {
 
@@ -199,41 +199,45 @@ $(function() {
         },
         _showImage        = function( $item ) {
 
-		    // shows the large image that is associated to the $item
-		    var $loader    = $rgGallery.find('div.rg-loading').show();
+            // shows the large image that is associated to the $item
+            var $loader    = $rgGallery.find('div.rg-loading').show();
 
-		    $items.removeClass('selected');
-		    $item.addClass('selected');
+            $items.removeClass('selected');
+            $item.addClass('selected');
 
-			var $thumb      = $item.find('img');
-			var largesrc    = $thumb.data('large');
+            var $thumb      = $item.find('img');
+            //var largesrc    = $thumb.data('large');
 
-			// find image index in EFGallery
-			var id          = $thumb.data('index');
+            // find image index in EFGallery
+            var id          = $thumb.data('index');
 
-			var curObj      = EFGallery[id];
-			var curImg      = curObj.image;
+            var curObj      = EFGallery[id];
+            var curImg      = curObj.image;
 
-			var imgSrc      = EFGalleryImagesPath + curImg['base'] + '{width}' + curImg['ext'];
-			var imgAlt      = 'Eric Ferber - ' + curObj['nom'];
+            if( curImg['ext'] == undefined ){
+                curImg['ext'] = EFGalleryDefaults['imgDefaultExtension'];
+            }
 
-			var legende     = curObj["legende"] ? '<br>' + curObj["legende"] : "";
-			var dimensions  = curObj["dimensions"] ? '<br>' + curObj["dimensions"] : "";
-			var materiaux   = curObj["materiaux"] ? '<br>' + curObj["materiaux"] : "";
+            var imgSrc  = EFGalleryImagesPath + curImg['base'] + '{width}' + curImg['ext'];
+            var imgAlt  = curObj['nom'] + EFGalleryDefaults['imgAltAppendString'];
 
-			var imgLegend   = '<a href="#" class="legendTogle"><small>légende</small></a>';
+            var legende     = curObj["legende"] ? '<br>' + curObj["legende"] : "";
+            var dimensions  = curObj["dimensions"] ? '<br>' + curObj["dimensions"] : "";
+            var materiaux   = curObj["materiaux"] ? '<br>' + curObj["materiaux"] : "";
 
-			var imgCaption  = '<strong>' + curObj["nom"] + '</strong>' + legende + dimensions + materiaux;
+            var imgLegend   = '<a href="#" class="legendTogle"><small>légende</small></a>';
 
-            var imgId		= 'img' + id;
-			var imgTarget   = '#' + imgId;
-			var imagerTpl   = '<div id="' + imgId + '" data-src="' + imgSrc
-			                  + '" data-alt="' + imgAlt
-			                  + '" data-class="img-reponsive"></div>';
+            var imgCaption  = '<strong>' + curObj["nom"] + '</strong>' + legende + dimensions + materiaux;
 
-		    $rgGallery.find('div.rg-image').empty().append(imagerTpl);
+            var imgId        = 'img' + id;
+            var imgTarget   = '#' + imgId;
+            var imagerTpl   = '<div id="' + imgId + '" data-src="' + imgSrc
+                              + '" data-alt="' + imgAlt
+                              + '" data-class="img-reponsive"></div>';
 
-			$rgGallery.find('div.rg-legend').children('p').empty().html( imgLegend );
+            $rgGallery.find('div.rg-image').empty().append(imagerTpl);
+
+            $rgGallery.find('div.rg-legend').children('p').empty().html( imgLegend );
 
             $('.legendTogle').click(
                 function(){
@@ -264,21 +268,25 @@ $(function() {
 
             imgCaption = imgCaption.replace(/\"/g, '\'');
 
-			$rgGallery.find('div.rg-caption').children('p').empty().html( imgCaption );
+            $rgGallery.find('div.rg-caption').children('p').empty().html( imgCaption );
 
-	        $loader.hide();
+            $loader.hide();
 
-	        if( mode === 'carousel' ) {
-	            $esCarousel.elastislide( 'reload' );
+            if( mode === 'carousel' ) {
+                $esCarousel.elastislide( 'reload' );
                 // this is a trick !!
-	            $esCarousel.elastislide( 'setCurrent', id );
-	        }
+                $esCarousel.elastislide( 'setCurrent', id );
+            }
 
-	        anim    = false;
+            anim    = false;
 
-			var imgrFlickr = new Imager( imgTarget, {
-			    availableWidths: curObj.formats
-			});
+            if( curObj.formats == undefined ){
+                curObj.formats = EFGalleryDefaults['imgDefaultFormats']
+            }
+
+            var imgrFlickr = new Imager( imgTarget, {
+                availableWidths: curObj.formats
+            });
 
         },
         addItems        = function( $new ) {

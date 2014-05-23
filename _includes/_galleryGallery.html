@@ -1,4 +1,3 @@
-
 <div class="row">
   <div class="col-lg-10 col-md-offset-1">
     <div id="rg-gallery" class="rg-gallery">
@@ -8,21 +7,36 @@
           </div>
           <div class="es-carousel">
             <ul>
-            {% for o in include.collection %}
-                {% assign i        = o.image %}
+{% assign def = site.galleryDefaultSettings %}
 
-                {% assign thumbUrl = include.imagesPath | append : 'thumbs/' | append : i.base | append : i.thumb | append : i.ext %}
+{% for object in include.collection %}
 
-                {% assign imgAlt   = o.name | append : ' - Eric Ferbert' %}
+    {% assign i   = object.image %}
 
-                {% assign index    = forloop.index | minus: 1 %}
-              <li>
-                    <a href="#">
-                        <img src="{{thumbUrl}}" data-index="{{ index }}" alt="{{imgAlt}}">
-                    </a>
-              </li>
+    {% if i.ext %}
+      {% assign fileExtension  = i.ext %}
+    {% else %}
+      {% assign fileExtension  = def.imgDefaultExtension %}
+    {% endif %}
 
-            {% endfor %}
+    {% if i.thumb %}
+      {% assign thumb  = i.thumb %}
+    {% else %}
+      {% assign thumb  = def.imgDefaultThumbAppendString %}
+    {% endif %}
+
+    {% assign imgAlt   = object.nom | append : site.galleryDefaultSettings.imgAltAppendString %}
+
+    {% assign thumbUrl = include.imagesPath | append : 'thumbs/' | append : i.base | append : thumb | append : fileExtension %}
+
+    {% assign index = forloop.index | minus: 1 %}
+
+        <li>
+              <a href="#">
+                  <img src="{{thumbUrl}}" data-index="{{ index }}" alt="{{imgAlt}}">
+              </a>
+        </li>
+{% endfor %}
             </ul>
           </div>
         </div>
@@ -32,6 +46,7 @@
 </div>
 
 <script>
-var EFGallery = {{ include.collection | jsonify }};
+var EFGallery           = {{ include.collection | jsonify }};
 var EFGalleryImagesPath = '{{ include.imagesPath }}';
+var EFGalleryDefaults   = {{ def | jsonify }};
 </script>
