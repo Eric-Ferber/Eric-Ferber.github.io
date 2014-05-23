@@ -910,7 +910,7 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 header{margin:10px 0 20px}
 .navbar-brand{padding:42px 3px 29px 83px;background:#fff url(../../img/logo-eric-ferber-80.png) no-repeat top left}
 .navbar{margin-bottom:10px}
-.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{background:#eee}@media (min-width:768px){.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{background:#fff;border-bottom:1px solid #222}}
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav a:hover,.navbar-default .navbar-nav a:focus{background:#eee}@media (min-width:768px){.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav a:hover,.navbar-default .navbar-nav a:focus{background:#fff;border-bottom:1px solid #222}}
 .navbar-toggle{margin-right:0}
 .navbar-nav>li>a{padding-top:0;padding-bottom:5px}
 .content a,footer a{border-bottom:1px solid #222}
