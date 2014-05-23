@@ -1,0 +1,38 @@
+# Description des images pour la galerie jardin
+
+- nom : Jardins des sculptures
+  image :
+# la base du nom du ou des fichiers sans le suffixe de taille
+# jardin-des-sculptures-1-75.jpg -> jardin-des-sculptures-1
+    base : jardin-des-sculptures-1
+
+#####################################################
+
+- nom : Jardins des sculptures
+  image :
+    base : jardin-des-sculptures-2
+
+#####################################################
+
+- nom : Jardins des sculptures
+  image :
+    base : jardin-des-sculptures-3
+
+#####################################################
+
+- nom : Jardins des sculptures
+  image :
+    base : jardin-des-sculptures-4
+
+#####################################################
+
+- nom : Jardins des sculptures
+  image :
+    base : jardin-des-sculptures-5
+
+#####################################################
+
+- nom : Jardins des sculptures
+  image :
+    base : jardin-des-sculptures-6
+
