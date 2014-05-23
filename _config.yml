@@ -10,5 +10,13 @@ url: "http://eric-ferber.github.io/"
 markdown: kramdown
 permalinks: pretty
 
-
 exclude: [LICENSE, README.md, Rakefile, bootstrap/less, node_modules]
+
+galleryDefaultSettings:
+
+    imgDefaultExtension: .jpg
+    imgDefaultThumbAppendString: -75
+    imgDefaultFormats:
+        500 : -500
+
+    imgAltAppendString: ' - Eric Ferber'
