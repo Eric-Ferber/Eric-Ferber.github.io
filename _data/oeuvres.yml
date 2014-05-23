@@ -20,50 +20,34 @@
 #  - l'indication de sa largeur "-75"
 #  - son extension (ext) ".jpg"
     base  : circle-1
+# largeur des vignettes (-75) (facultatif - defaut = '-75')
     thumb : -75
-# extension autorisés : .png et .jpg
+# extension autorisés : .png et .jpg (facultatif - defaut '.jpg')
     ext   : .jpg
-# différents formats possibles
+# différents formats possibles (facultatif - defaut = 500 : -500 )
   formats:
       500 : -500
 #######################################################
-
 - nom : Circle 2
   legende : ~
   dimensions : hauteur 2,8 mètres
   materiaux  : aluminium
   image :
     base  : circle-2
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #######################################################
-
 - nom : Circle 4
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
   materiaux  : aluminium
   image :
     base  : circle-4
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
-
 - nom : Circle 5
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
   materiaux  : aluminium
   image :
     base  : circle-5
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
 
 - nom : Envollée
@@ -72,23 +56,13 @@
   materiaux  : aluminium
   image :
     base  : envollee
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################"
-
 - nom : Essai
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
   materiaux  : aluminium
   image :
     base  : essai
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
 - nom : Gitane
   legende : ~
@@ -96,11 +70,6 @@
   materiaux  : aluminium
   image :
     base  : gitane
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
 - nom : La Vie
   legende : ~
@@ -108,11 +77,6 @@
   materiaux  : aluminium
   image :
     base  : la-vie
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
 - nom : Interrogation
   legende : ~
@@ -120,11 +84,6 @@
   materiaux  : aluminium
   image :
     base  : interrogation
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
 - nom : Passion
   legende :
@@ -132,11 +91,6 @@
   materiaux  : acier corten et inox
   image :
     base  : passion
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
 - nom : Sérénité
   legende :
@@ -144,11 +98,6 @@
   materiaux  : aluminium
   image :
     base  : serenite
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
 - nom : Silhouette 1
   legende :
@@ -156,11 +105,6 @@
   materiaux  : aluminium
   image :
     base  : silhouette-1
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
 - nom : Silhouette 3
   legende :
@@ -168,11 +112,6 @@
   materiaux  : aluminium
   image :
     base  : silhouette-3
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
 - nom : Symphonie
   legende :
@@ -180,131 +119,74 @@
   materiaux  : acier corten
   image :
     base  : symphonie
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
-
 #####################################################"
-
 - nom : Ezo
   legende : ~
   dimensions : hauteur 2,5 mètres
   materiaux  : aluminium
   image :
     base  : ezo
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################"
-
 - nom : Dragon
   legende : Inspiré par le symbole du dragon "Kandji Japonais"
   dimensions : Hauteur 1.5 mètres
   materiaux  : acier corten
   image :
     base  : dragon-1
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################"
-
 - nom : Amour
   legende : Inspiré par le symbole de l'amour "Kandji Japonais"
   dimensions : Hauteur 1.5 mètres
   materiaux  : aluminium
   image :
     base  : amour
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################"
-
 - nom : L'été
   legende : Inspiré par le symbole du l'été "Kandji Japonais"
   dimensions : Hauteur 2 mètres
   materiaux  : aluminium
   image :
     base  : symbole-de-l-ete
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################
-
 - nom : Candide
   legende : ~
   dimensions : hauteur 0.8 mètres
   materiaux  : acier corten
   image :
     base  : candide
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################"
-
 - nom : Tranche de vie
   legende :
   dimensions : Hauteur 9 mètres
   materiaux  : acier corten
   image :
     base  : tranche-de-vie
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################
-
 - nom : Colonne dans le vent
   legende :
   dimensions : Hauteur 12 mètres
   materiaux  : acier corten
   image :
     base  : colonne-dans-le-vent
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################
-
 - nom : Pince à linge
   legende :
   dimensions : Hauteur 5 mètres
   materiaux  : acier corten et inox
   image :
     base  : pince-a-linge
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################
-
 - nom : Passage vers un autre monde
   legende :
   dimensions : Hauteur 3 mètres
   materiaux  : tubes aluminium
   image :
     base  : passage-vers-un-autre-monde
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################
-
 - nom : Victoire
   legende :
   dimensions : Hauteur 2 mètres avec socle
   materiaux  : Acier corten
   image :
     base  : Victoire
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################
-
-

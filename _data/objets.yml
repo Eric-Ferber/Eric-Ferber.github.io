@@ -20,35 +20,25 @@
 #  - l'indication de sa largeur "-75"
 #  - son extension (ext) ".jpg"
     base  : infinitie
+# largeur des vignettes (-75) (facultatif - defaut = '-75')
     thumb : -75
-# extension autorisés : .png et .jpg
+# extension autorisés : .png et .jpg (facultatif - defaut '.jpg')
     ext   : .jpg
-# différents formats possibles
+# différents formats possibles (facultatif - defaut = 500 : -500 )
   formats:
       500 : -500
 #####################################################
-
 - nom : Tulipe dans le vent
   legende : Fontaine
   dimensions : hauteur 1,2 mètres
   materiaux  : tôle inox brossé
   image :
     base  : tulipe_dans_le_vent-4
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################
-
 - nom : Ananas
   legende :
   dimensions : hauteur 1,2 mètres
   materiaux  : tôle inox brossé
   image :
     base  : ananas
-    thumb : -75
-    ext   : .jpg
-  formats:
-      500 : -500
 #####################################################
-
