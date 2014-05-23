@@ -17,6 +17,6 @@ galleryDefaultSettings:
     imgDefaultExtension: .jpg
     imgDefaultThumbAppendString: -75
     imgDefaultFormats:
-        500 : -500
+        500: -500
 
     imgAltAppendString: ' - Eric Ferber'

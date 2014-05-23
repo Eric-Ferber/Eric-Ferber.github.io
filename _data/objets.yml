@@ -26,7 +26,7 @@
     ext   : .jpg
 # différents formats possibles (facultatif - defaut = 500 : -500 )
   formats:
-      500 : -500
+    500: -500
 #####################################################
 - nom : Tulipe dans le vent
   legende : Fontaine

@@ -25,15 +25,19 @@
       {% assign thumb  = def.imgDefaultThumbAppendString %}
     {% endif %}
 
+    {% assign imgLowFormat = -500 %}
+
     {% assign imgAlt   = object.nom | append : site.galleryDefaultSettings.imgAltAppendString %}
 
     {% assign thumbUrl = include.imagesPath | append : 'thumbs/' | append : i.base | append : thumb | append : fileExtension %}
 
+    {% assign imgUrl = include.imagesPath | append : i.base | append : imgLowFormat | append : fileExtension %}
+
     {% assign index = forloop.index | minus: 1 %}
 
         <li>
-              <a href="#">
-                  <img src="{{thumbUrl}}" data-index="{{ index }}" alt="{{imgAlt}}">
+              <a href="{{ imgUrl }}">
+                  <img src="{{ thumbUrl }}" data-index="{{ index }}" alt="{{ imgAlt }}">
               </a>
         </li>
 {% endfor %}
