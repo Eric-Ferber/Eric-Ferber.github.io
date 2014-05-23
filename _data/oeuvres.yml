@@ -12,7 +12,7 @@
 # vide : ~
   dimensions : Hauteur avec socle 2,8 mètres
 # materiaux (facultatif)
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
 # caracteristiques des images
   image :
 # le nom d'image "candide-75.jpg" est constitié de :
@@ -31,7 +31,7 @@
 - nom : Circle 2
   legende : ~
   dimensions : hauteur 2,8 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : circle-2
     thumb : -75
@@ -43,7 +43,7 @@
 - nom : Circle 4
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : circle-4
     thumb : -75
@@ -56,7 +56,7 @@
 - nom : Circle 5
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : circle-5
     thumb : -75
@@ -69,7 +69,7 @@
 - nom : Envollée
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : envollee
     thumb : -75
@@ -81,7 +81,7 @@
 - nom : Essai
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : essai
     thumb : -75
@@ -93,7 +93,7 @@
 - nom : Gitane
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : gitane
     thumb : -75
@@ -105,7 +105,7 @@
 - nom : La Vie
   legende : ~
   dimensions : Hauteur avec socle 4,5 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : la-vie
     thumb : -75
@@ -117,7 +117,7 @@
 - nom : Interrogation
   legende : ~
   dimensions : Hauteur avec socle 2,8 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : interrogation
     thumb : -75
@@ -129,7 +129,7 @@
 - nom : Passion
   legende :
   dimensions : Hauteur avec socle 2,8 mètres
-  materiaux  : tôle acier corten et inox
+  materiaux  : acier corten et inox
   image :
     base  : passion
     thumb : -75
@@ -141,7 +141,7 @@
 - nom : Sérénité
   legende :
   dimensions : Hauteur avec socle 2,8 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : serenite
     thumb : -75
@@ -153,7 +153,7 @@
 - nom : Silhouette 1
   legende :
   dimensions : Hauteur 2 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : silhouette-1
     thumb : -75
@@ -165,7 +165,7 @@
 - nom : Silhouette 3
   legende :
   dimensions : Hauteur 2 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : silhouette-3
     thumb : -75
@@ -177,7 +177,7 @@
 - nom : Symphonie
   legende :
   dimensions : Hauteur 3.5 mètres
-  materiaux  : tôle acier corten
+  materiaux  : acier corten
   image :
     base  : symphonie
     thumb : -75
@@ -190,7 +190,7 @@
 - nom : Ezo
   legende : ~
   dimensions : hauteur 2,5 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : ezo
     thumb : -75
@@ -202,7 +202,7 @@
 - nom : Dragon
   legende : Inspiré par le symbole du dragon "Kandji Japonais"
   dimensions : Hauteur 1.5 mètres
-  materiaux  : tôle acier corten
+  materiaux  : acier corten
   image :
     base  : dragon-1
     thumb : -75
@@ -214,7 +214,7 @@
 - nom : Amour
   legende : Inspiré par le symbole de l'amour "Kandji Japonais"
   dimensions : Hauteur 1.5 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : amour
     thumb : -75
@@ -224,9 +224,9 @@
 #####################################################"
 
 - nom : L'été
-  legende : Inspiré par le symbole du dragon "Kandji Japonais"
+  legende : Inspiré par le symbole du l'été "Kandji Japonais"
   dimensions : Hauteur 2 mètres
-  materiaux  : tôle aluminium
+  materiaux  : aluminium
   image :
     base  : symbole-de-l-ete
     thumb : -75
@@ -238,7 +238,7 @@
 - nom : Candide
   legende : ~
   dimensions : hauteur 0.8 mètres
-  materiaux  : tôle acier corten
+  materiaux  : acier corten
   image :
     base  : candide
     thumb : -75
@@ -250,7 +250,7 @@
 - nom : Tranche de vie
   legende :
   dimensions : Hauteur 9 mètres
-  materiaux  : tôle acier corten
+  materiaux  : acier corten
   image :
     base  : tranche-de-vie
     thumb : -75
@@ -262,7 +262,7 @@
 - nom : Colonne dans le vent
   legende :
   dimensions : Hauteur 12 mètres
-  materiaux  : tôle acier corten
+  materiaux  : acier corten
   image :
     base  : colonne-dans-le-vent
     thumb : -75
@@ -274,7 +274,7 @@
 - nom : Pince à linge
   legende :
   dimensions : Hauteur 5 mètres
-  materiaux  : tôle acier corten et tube inox
+  materiaux  : acier corten et inox
   image :
     base  : pince-a-linge
     thumb : -75
