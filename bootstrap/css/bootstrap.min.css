@@ -916,6 +916,7 @@ header{margin:10px 0 20px}
 .content a,footer a{border-bottom:1px solid #222}
 .content a:hover,footer a:hover{border-bottom:1px solid #222;text-decoration:none}
 a.externalLink{background:#fff url(../../img/external_link_icon.gif) no-repeat top right;padding-right:13px}
+a.externalLink.noPicto{background-image:none;padding-right:3px}
 h1{color:#555}
 blockquote{background:#eee}
 blockquote p{font-style:italic}
