@@ -49,6 +49,13 @@
   image :
     base  : circle-5
 #####################################################"
+- nom : Circle 8
+  legende : ~
+  dimensions : Hauteur avec socle 3,5 mètres
+  materiaux  : acier corten
+  image :
+    base  : circle-8
+#####################################################"
 
 - nom : Envollée
   legende : ~
@@ -113,12 +120,40 @@
   image :
     base  : silhouette-3
 #####################################################"
+- nom : Silhouette 3
+  legende :
+  dimensions : Hauteur 2 mètres
+  materiaux  : aluminium
+  image :
+    base  : silhouette-3-2
+#####################################################"
 - nom : Symphonie
   legende :
   dimensions : Hauteur 3.5 mètres
   materiaux  : acier corten
   image :
     base  : symphonie
+#####################################################"
+- nom : Révélation
+  legende : ~
+  dimensions : hauteur 2,5 mètres
+  materiaux  : acier corten
+  image :
+    base  : revelation-1
+#####################################################"
+- nom : Révélation
+  legende : ~
+  dimensions : hauteur 2,5 mètres
+  materiaux  : acier corten
+  image :
+    base  : revelation-2
+#####################################################"
+- nom : Jour nouveau
+  legende : ~
+  dimensions : hauteur 2 mètres
+  materiaux  : acier corten
+  image :
+    base  : jour-nouveau
 #####################################################"
 - nom : Ezo
   legende : ~
@@ -134,6 +169,13 @@
   image :
     base  : dragon-1
 #####################################################"
+- nom : Dragon
+  legende : Inspiré par le symbole du dragon "Kandji Japonais"
+  dimensions : Hauteur 1.5 mètres
+  materiaux  : acier corten
+  image :
+    base  : dragon-2
+#####################################################"
 - nom : Amour
   legende : Inspiré par le symbole de l'amour "Kandji Japonais"
   dimensions : Hauteur 1.5 mètres
@@ -146,7 +188,7 @@
   dimensions : Hauteur 2 mètres
   materiaux  : aluminium
   image :
-    base  : symbole-de-l-ete
+    base  : l-ete
 #####################################################
 - nom : Candide
   legende : ~
@@ -162,12 +204,12 @@
   image :
     base  : tranche-de-vie
 #####################################################
-- nom : Colonne dans le vent
+- nom : Colonnes dans le vent
   legende :
   dimensions : Hauteur 12 mètres
   materiaux  : acier corten
   image :
-    base  : colonne-dans-le-vent
+    base  : colonnes
 #####################################################
 - nom : Pince à linge
   legende :
@@ -175,6 +217,20 @@
   materiaux  : acier corten et inox
   image :
     base  : pince-a-linge
+#####################################################
+- nom : Pi
+  legende :
+  dimensions : Hauteur 6 mètres
+  materiaux  : acier corten
+  image :
+    base  : pi-1
+#####################################################
+- nom : Pi
+  legende :
+  dimensions : Hauteur 6 mètres
+  materiaux  : acier corten
+  image :
+    base  : pi-2
 #####################################################
 - nom : Passage vers un autre monde
   legende :
@@ -189,4 +245,11 @@
   materiaux  : Acier corten
   image :
     base  : victoire-01
+#####################################################
+- nom : Ananas 2
+  legende :
+  dimensions : Hauteur 2 mètres
+  materiaux  : acier corten et inox
+  image :
+    base  : ananas-2
 #####################################################
