@@ -253,3 +253,29 @@
   image :
     base  : ananas-2
 #####################################################
+- nom : Les amoureuses
+  legende :
+  dimensions : Hauteur 3.6 mètres avec socle
+  materiaux  : acier corten
+  image :
+    base  : les-amoureuses
+#####################################################
+- nom : 1250.12
+  dimensions : Hauteur 2.3 mètres
+  materiaux  : acier corten
+  image :
+    base  : '1250.12'
+#####################################################
+- nom : 1250.40
+  dimensions : Hauteur 2 mètres
+  materiaux  : acier corten
+  image :
+    base  : '1250.40'
+#####################################################
+- nom : 1250.284
+  dimensions : Hauteur 2.3 mètres avec socle
+  materiaux  : acier corten
+  image :
+    base  : '1250.284'
+#####################################################
+
