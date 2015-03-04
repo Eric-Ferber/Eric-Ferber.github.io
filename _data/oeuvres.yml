@@ -260,22 +260,41 @@
   image :
     base  : les-amoureuses
 #####################################################
-- nom : 1250.12
+- nom : 1250.1
   dimensions : Hauteur 2.3 mètres
   materiaux  : acier corten
   image :
-    base  : '1250.12'
+    base  : '1250.1-sculpture acier corten'
 #####################################################
-- nom : 1250.40
+- nom : 1250.3
   dimensions : Hauteur 2 mètres
   materiaux  : acier corten
   image :
-    base  : '1250.40'
+    base  : '1250.3-sculpture'
 #####################################################
-- nom : 1250.284
+- nom : 1250.2
   dimensions : Hauteur 2.3 mètres avec socle
   materiaux  : acier corten
   image :
-    base  : '1250.284'
+    base  : '1250.2-sculpture monumentale'
+#####################################################
+- nom : 1250.4
+  dimensions : Hauteur 2.3 mètres avec socle
+  materiaux  : acier corten
+  image :
+    base  : '1250.4-sculpture acier corten'
+#####################################################
+- nom : 1250.5
+  dimensions : Hauteur 2.3 mètres avec socle
+  materiaux  : acier corten
+  image :
+    base  : '1250.5-sculpture monumentale'
+#####################################################
+
+- nom : 1250.6
+  dimensions : Hauteur 2.3 mètres avec socle
+  materiaux  : acier corten
+  image :
+    base  : '1250.6-sculpture metal'
 #####################################################
 
