@@ -3,6 +3,18 @@
 # les plus récentes sont en haut de la page
 # l'ordre est important !!!!
 
+- name: Sculpturum
+  description: Salon européen de la sculpture
+  site: http://www.art-multimedia.fr/sculpturum/
+  startDate: 29/05/2015
+  endDate: 31/05/2015
+  adresse: Parc des Expositions du Waken
+  city: Strasbourg
+  postCode: 67000
+  country: France
+  comments:
+  show : true
+
 - name: Salon Résonances
   description: Salon européen des métiers d'art
   site: http://salon-resonances.com/
